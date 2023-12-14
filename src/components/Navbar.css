@@ -1,0 +1,14 @@
+@tailwind base;
+
+nav {
+  background-color: #111a21;
+}
+@media screen and (min-width: 800px) {
+  nav {
+    background: linear-gradient(
+      180deg,
+      #151b1f 79.69%,
+      rgba(21, 27, 31, 0) 100%
+    );
+  }
+}
