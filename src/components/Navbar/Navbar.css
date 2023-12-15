@@ -9,5 +9,6 @@ nav {
   nav {
     background: linear-gradient(180deg, #000000 81%, rgba(0, 0, 0, 0) 100%);
     height: 4rem;
+    padding: 0 2rem;
   }
 }
