@@ -10,6 +10,7 @@ const navComponents = [
   { title: "GALLERY", id: 3, scroll: "#" },
   { title: "CONTACT US", id: 4, scroll: "#" },
 ];
+//a
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
