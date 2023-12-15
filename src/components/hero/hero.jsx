@@ -14,7 +14,7 @@ export default function Hero() {
           className="hero-image fixed object-cover w-full h-[500px] -z-20"
         />
 
-        <div className="hero-child absolute w-full top-[260px] md:top-[240px] z-0">
+        <div className="hero-child absolute w-full top-[260px] sm:top-[240px] z-0">
           <div className="hero-wrapper relative w-[700px] mx-auto">
             <p className="drop-1 hero-text mx-auto text-center p-3 
                 font-bold text-white text-6xl">

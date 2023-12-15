@@ -10,7 +10,6 @@ const navComponents = [
   { title: "GALLERY", id: 3, scroll: "#" },
   { title: "CONTACT US", id: 4, scroll: "#" },
 ];
-//a
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -37,8 +36,8 @@ function Navbar() {
         </div>
         <ul
           className={`${
-            navbar ? "block" : "hidden"
-          } h-[100vh] w-full absolute top-[7vh] bg-black md:h-auto md:w-auto md:flex md:items-center`}
+            navbar ? "absolute" : "hidden"
+          } h-[100vh] w-full top-[7vh] bg-black md:h-auto md:w-auto md:flex md:items-center`}
         >
           {navComponents.map((navComponent) => (
             <li key={navComponent.id}>
