@@ -3,6 +3,7 @@
 nav {
   background-color: black;
   height: 3.5rem;
+  z-index: 20;
 }
 
 @media screen and (min-width: 800px) {

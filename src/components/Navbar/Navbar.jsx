@@ -15,7 +15,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className="md:flex justify-between items-center z-20 fixed w-full top-0">
+      <nav className="md:flex justify-between items-center z-30 fixed w-full h-[7vh] bg-black top-0">
         <div className="flex justify-between items-center">
           <a href="/">
             <Image
@@ -37,7 +37,7 @@ function Navbar() {
         <ul
           className={`${
             navbar ? "block" : "hidden"
-          } h-[100vh] w-full md:h-auto md:w-auto md:flex md:items-center`}
+          } h-[100vh] w-full absolute top-[7vh] bg-black md:h-auto md:w-auto md:flex md:items-center`}
         >
           {navComponents.map((navComponent) => (
             <li key={navComponent.id}>
