@@ -7,11 +7,11 @@ const ytlink = "https://www.youtube.com/watch?v=e1lyC_ipKfQ";
 export default function Hero() {
   return (
     <>
-      <div className="hero-section overflow-hidden">
+      <div className="hero-section w-full max-w-full overflow-hidden">
         <img
           src={herocontent.video}
           alt=""
-          className="hero-image fixed object-cover w-full h-[500px] -z-20"
+          className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
         />
 
         <div className="hero-child absolute w-full top-[260px] sm:top-[240px] z-0">
@@ -27,13 +27,13 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex w-[260px] h-[52px] p-3 mx-auto text-center
-               text-white text-base mt-7 rounded-full font-semibold bg-slate-900
+               text-white btn text-base mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
                 <img
                   src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702630222/play_kmg3ur.png"
                   alt=""
-                  className="mr-2.5"
+                  className="mr-2.5 w-[28px] h-[28px]"
                 />
                 Enhance Your Experience
               </Link>
