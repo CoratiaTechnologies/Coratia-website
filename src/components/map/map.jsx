@@ -4,7 +4,7 @@ const logo = "https://lh3.googleusercontent.com/V0Lu6YzAVaCVcjSJ_4Qb0mR_idw-GApE
 
 export default function Map(){
     return(
-        <div className="bg-white text-black my-5">
+        <div className="bg-white text-black py-5">
             <h1 className="text-4xl md:text-6xl font-semibold pt-5 ml-10">Get in Touch</h1>
 
             <div className="h-[540px] w-[100%] flex items-center justify-center">
