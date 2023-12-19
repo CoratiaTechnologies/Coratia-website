@@ -23,7 +23,7 @@ function Navbar() {
               alt="vriddhi"
               height={"200"}
               width={"200"}
-              className="cursor-pointer ml-12"
+              className="cursor-pointer ml-4 sm:ml-12"
             />
           </a>
           <span className="md:hidden relative px-4">
@@ -43,7 +43,7 @@ function Navbar() {
             <li key={navComponent.id}>
               <div className="w-full my-14 md:my-0 text-center">
                 <Link
-                  onClick={() => setNavbar((navbar) => !navbar)}
+                  /*onClick={() => setNavbar((navbar) => !navbar)}*/
                   href={navComponent.scroll}
                   className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-cyan-600"
                 >

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { herocontent } from "../../../config/content/Hero";
 import "./Hero.css";
-const ytlink = "https://www.youtube.com/watch?v=e1lyC_ipKfQ";
+const ytlink = "https://www.youtube.com/channel/UClKU1kWF0zjiNihlG-Lfrmw";
 
 export default function Hero() {
   return (
@@ -14,11 +14,11 @@ export default function Hero() {
           className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
         />
 
-        <div className="hero-child absolute w-full top-[260px] sm:top-[240px] z-0">
+        <div className="hero-child absolute w-full top-[220px] sm:top-[240px] z-0">
           <div className="hero-wrapper relative w-[700px] mx-auto">
             <p className="drop-1 hero-text mx-auto text-center p-3 
                 font-bold text-white text-6xl">
-              Revolutionizing Underwater Inspection
+              Revolutionizing Underwater Inspection with Robots
             </p>
 
             <div className="drop-2">
@@ -26,8 +26,8 @@ export default function Hero() {
                 href={ytlink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-[260px] h-[52px] p-3 mx-auto text-center
-               text-white btn text-base mt-7 rounded-full font-semibold bg-slate-900
+                className="flex w-[225px] sm:w-[260px] h-[52px] p-3 mx-auto text-center
+               text-white btn text-base sm:mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
                 <img

@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   .hero-text {
     font-size: 1.8rem /* 29px */;
     line-height: 2.2rem /* 34px */;
