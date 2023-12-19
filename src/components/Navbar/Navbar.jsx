@@ -15,7 +15,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className="md:flex justify-between items-center z-20 fixed w-full top-0">
+      <nav className="md:flex justify-between items-center z-30 fixed w-full h-[60px] bg-black top-0">
         <div className="flex justify-between items-center">
           <a href="/">
             <Image
@@ -23,7 +23,7 @@ function Navbar() {
               alt="vriddhi"
               height={"200"}
               width={"200"}
-              className="cursor-pointer px-2"
+              className="cursor-pointer ml-4 sm:ml-12"
             />
           </a>
           <span className="md:hidden relative px-4">
@@ -36,14 +36,14 @@ function Navbar() {
         </div>
         <ul
           className={`${
-            navbar ? "block" : "hidden"
-          } h-[100vh] w-full md:h-auto md:w-auto md:flex md:items-center`}
+            navbar ? "absolute" : "hidden"
+          } h-[100vh] w-full top-[60px] bg-black md:h-auto md:w-auto md:flex md:items-center`}
         >
           {navComponents.map((navComponent) => (
             <li key={navComponent.id}>
               <div className="w-full my-14 md:my-0 text-center">
                 <Link
-                  onClick={() => setNavbar((navbar) => !navbar)}
+                  /*onClick={() => setNavbar((navbar) => !navbar)}*/
                   href={navComponent.scroll}
                   className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-cyan-600"
                 >
