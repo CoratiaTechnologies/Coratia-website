@@ -6,10 +6,6 @@ import AboutUs from "../components/About/About";
 import Map from "../components/map/map";
 import HashLoader from "react-spinners/HashLoader";
 
-async function wait(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 export default function Home() {
   let [loading, setLoading] = useState(false);
 
@@ -28,6 +24,11 @@ export default function Home() {
       ) : (
         <>
           <Hero />
+          <div className="bg-[#0f172a] w-[100vw] h-[20rem] flex items-center justify-center">
+            <h1 style={{ fontSize: "4rem" }} className="font-serif">
+              Best Startup
+            </h1>
+          </div>
           <AboutUs />
           <Map />
         </>
