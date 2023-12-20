@@ -16,10 +16,13 @@
     "hamburger-react": "^2.5.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "react-spinners": "^0.13.8",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.2"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
