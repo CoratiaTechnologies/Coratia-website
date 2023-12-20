@@ -5,6 +5,7 @@ import Hero from "../components/hero/hero";
 import AboutUs from "../components/About/About";
 import Map from "../components/map/map";
 import HashLoader from "react-spinners/HashLoader";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 export default function Home() {
   let [loading, setLoading] = useState(false);
@@ -30,6 +31,7 @@ export default function Home() {
             </h1>
           </div>
           <AboutUs />
+          <Testimonials />
           <Map />
         </>
       )}
