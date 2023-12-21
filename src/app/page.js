@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./globals.css";
 import Hero from "../components/hero/hero";
 import AboutUs from "../components/About/About";
+import Companies from "../components/companies/companies";
 import Map from "../components/map/map";
 import HashLoader from "react-spinners/HashLoader";
 import Testimonials from "../components/Testimonials/Testimonials";
@@ -15,7 +16,7 @@ export default function Home() {
     setTimeout(() => {
       setLoading(false);
     }, 700);
-  });
+  }, []);
   return (
     <>
       {loading ? (
@@ -31,6 +32,7 @@ export default function Home() {
             </h1>
           </div>
           <AboutUs />
+          <Companies/>
           <Testimonials />
           <Map />
         </>
