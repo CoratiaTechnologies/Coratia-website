@@ -1,7 +1,27 @@
 import React from "react";
 import Link from "next/link";
 import { herocontent } from "../../../config/content/Hero";
+import HashLoader from "react-spinners/HashLoader";
 import "./Hero.css";
+
+export function HeroText() {
+  return (
+    <h1
+      style={{ fontSize: "13vw", mixBlendMode: "multiply" }}
+      className="  bg-black text-white w-[100vw] text-center font-extrabold"
+    >
+      Best Startup
+    </h1>
+  );
+}
+
+export function Loader({ loading }) {
+  return (
+    <main className="flex w-[100vw] h-[100vh] items-center justify-center">
+      <HashLoader color="#0093C9" loading={loading} size={70} />
+    </main>
+  );
+}
 
 export default function Hero() {
   return (
