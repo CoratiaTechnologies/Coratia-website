@@ -43,7 +43,7 @@ function Navbar() {
             <li key={navComponent.id}>
               <div className="w-full my-14 md:my-0 text-center">
                 <Link
-                  /*onClick={() => setNavbar((navbar) => !navbar)}*/
+                  onClick={() => {if(navbar) setNavbar((navbar) => !navbar)}}
                   href={navComponent.scroll}
                   className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-cyan-600"
                 >

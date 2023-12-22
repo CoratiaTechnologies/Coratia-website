@@ -120,4 +120,7 @@
   .slider {
     height: 420px;
   }
+  .arrow {
+    display: none;
+  }
 }
