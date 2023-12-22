@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
           </div>
           <AboutUs />
-          <Companies/>
+          <Companies />
           <Testimonials />
           <Map />
         </>
