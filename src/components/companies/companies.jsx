@@ -7,18 +7,21 @@ const mage = "https://lh3.googleusercontent.com/0cDOOJjp8pUGDDFLqHFITEi35uMGZ5wH
 
 const Companies = () => {
     const [settings] = useState({
-      dots: true,
+      dots: false,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      speed: 3000,
+      autoplaySpeed: 3000,
       cssEase: 'linear',
     });
-    // Component logic
 
     const logos = [
+        mage,
+        mage,
+        mage,
+        mage,
         mage,
         mage,
         mage,
@@ -26,12 +29,14 @@ const Companies = () => {
       ];
 
     return (
-      <div className='bg-green-400'>
-        <h2>Proudly Supported by</h2>
+      <div className='bg-slate-100 w-full overflow-hidden px-5 md:px-10'>
+        <h2 className='text-black text-4xl md:text-5xl font-bold pb-5'>
+          Our Clients
+        </h2>
         <Slider {...settings}>
           {logos.map((logo, index) => (
           <div key={index} className="container flex">
-            <img src={logo} alt='logo' className='w-20 m-auto' />
+            <img src={logo} alt='logo' className='h-20 m-auto' />
           </div>
         ))}
         </Slider>
