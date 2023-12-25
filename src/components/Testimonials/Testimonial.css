@@ -3,21 +3,21 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
-.slide img {
+.slide2 img {
   width: 200px;
   height: 200px;
   aspect-ratio: 4/3;
   object-fit: cover;
 }
-.slide {
+.slide2 {
   transition: 0.6s;
   width: 100%;
 }
-.slide-active {
+.slide-active2 {
   opacity: 1;
   transition: 0.8s;
 }
-.carouselContainer {
+.carouselContainer2 {
   overflow: hidden;
   width: 100%;
   background-color: white;
@@ -26,11 +26,11 @@
 .slick-next:before {
   display: none;
 }
-.wrapper {
+.wrapper2 {
     display: flex;
 }
 
-.arrow {
+.arrow2 {
     font-size: 50px;
     padding: 5px 15px;
     display: flex;
@@ -41,47 +41,47 @@
     z-index: 100;
     cursor: pointer;
   }
-  .custom-prev-arrow {
+  .custom-prev-arrow2 {
     left: 0;
     justify-content: flex-start;
   }
-  .custom-next-arrow {
+  .custom-next-arrow2 {
     right: 0;
     justify-content: flex-end;
   }
 
 @media screen and (max-width: 996px) {
-  .slide img {
+  .slide2 img {
     width: 200px;
     aspect-ratio: 4/3;
   }
 }
 @media screen and (max-width: 768px) {
-  .slide img {
+  .slide2 img {
     width: 200px;
     aspect-ratio: 4/3;
   }
 }
 @media screen and (max-width: 554px) {
-/*  .slider {
+/*  .slider2 {
     height: 300px;
   }
 */
-  .slide img {
+  .slide2 img {
     height: 200px;
   }
 }
 @media screen and (max-width: 491px) {
-  .slide img {
+  .slide2 img {
     height: 150px;
     width: 150px;
     position: relative;
     margin: auto;
   }
-  .arrow {
+  .arrow2 {
     display: none;
   }
-  .wrapper {
+  .wrapper2 {
     display: block;
   }
 }

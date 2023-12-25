@@ -6,7 +6,7 @@ import Image from "next/image";
 import Hamburger from "hamburger-react";
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
-  { title: "PRODUCT", id: 2, scroll: "#" },
+  { title: "PRODUCT", id: 2, scroll: "/product/1" },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
   { title: "CONTACT US", id: 4, scroll: "#" },
 ];

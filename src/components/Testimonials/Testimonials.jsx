@@ -43,7 +43,7 @@ const Heading = styled.div`
 function CustomPrevArrow({ onClick }) {
   return (
     <div
-      className="arrow custom-prev-arrow"
+      className="arrow2 custom-prev-arrow2"
       onClick={onClick}
       onKeyDown={onClick}
       role='button'
@@ -57,7 +57,7 @@ function CustomPrevArrow({ onClick }) {
 function CustomNextArrow({ onClick }) {
   return (
     <div
-      className="arrow custom-next-arrow"
+      className="arrow2 custom-next-arrow2"
       onClick={onClick}
       onKeyDown={onClick}
       role='button'
@@ -102,8 +102,8 @@ export default function Testimonials() {
       <Heading>TESTIMONIALS</Heading>
     </div>
 
-    <div className="carouselContainer">
-      <div className="slider">
+    <div className="carouselContainer2">
+      <div className="slider2">
         <Slider
           centerMode={settings.centerMode}
           centerPadding={settings.centerPadding}
@@ -117,9 +117,9 @@ export default function Testimonials() {
           responsive={settings.responsive}
         >
           {carouselContent.map((content, index) => (
-            <div className={index === slideIndex ? 'slide slide-active' : 'slide'} key={content}>
+            <div className={index === slideIndex ? 'slide2 slide-active2' : 'slide2'} key={content}>
 
-              <div className='wrapper items-center justify-center px-5 md:px-20'>
+              <div className='wrapper2 items-center justify-center px-5 md:px-20'>
                 <img className='carousel-img rounded-full object-cover' src={content.picture} alt={`Alt ${index}`} />
                 <div className='text-black text-xl text-center mt-5 md:mt-0 md:mx-10'>
                   <p>{content.text}</p>
