@@ -6,7 +6,7 @@ import Image from "next/image";
 import Hamburger from "hamburger-react";
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
-  { title: "PRODUCT", id: 2, scroll: "#" },
+  { title: "PRODUCT", id: 2, scroll: "/product/1" },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
   { title: "CONTACT US", id: 4, scroll: "#" },
 ];
@@ -43,7 +43,7 @@ function Navbar() {
             <li key={navComponent.id}>
               <div className="w-full my-14 md:my-0 text-center">
                 <Link
-                  /*onClick={() => setNavbar((navbar) => !navbar)}*/
+                  onClick={() => {if(navbar) setNavbar((navbar) => !navbar)}}
                   href={navComponent.scroll}
                   className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-cyan-600"
                 >

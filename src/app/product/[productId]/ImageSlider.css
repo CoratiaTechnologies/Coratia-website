@@ -1,0 +1,33 @@
+.main{
+    text-align: center;
+    margin-top:30px ;
+  }
+  .flex_row{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+  }
+.main img{
+  height: 480px;
+  width: 800px;
+  object-fit: cover;
+}
+  
+.thumbnail{
+  padding-left: 20px;
+}
+.thumbnail img{
+  height: 70px;
+  width: 100px;
+  object-fit: cover;
+  margin: auto;
+}
+.clicked{
+  border: 5px solid black;
+}
+.btns{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background: grey;
+}

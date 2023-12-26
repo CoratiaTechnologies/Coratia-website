@@ -8,7 +8,7 @@ export function HeroText() {
   return (
     <h1
       style={{ fontSize: "13vw", mixBlendMode: "multiply" }}
-      className="  bg-black text-white w-[100vw] text-center font-extrabold"
+      className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
     >
       Best Startup
     </h1>
