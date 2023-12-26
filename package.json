@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.0",
     "@mui/material": "^5.15.0",
+    "@typeform/embed-react": "^3.9.0",
     "hamburger-react": "^2.5.0",
     "next": "14.0.4",
     "react": "^18",
