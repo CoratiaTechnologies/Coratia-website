@@ -35,15 +35,15 @@ function productPage() {
 
     return(
         <>
-        <div className="md:flex items-center justify-center pt-20 pb-5 px-5 md:px-10 text-black">
+        <div className="md:flex items-center justify-center pt-20 pb-7 px-5 md:px-10 text-black">
             <img
              src={product.image}
-             className="w-[500px] h-[300px] mx-auto md:mx-0 object-cover" />
-            <h2 className="text-center text-3xl font-semibold mt-3 md:mt-0 md:ml-10 md:w-[30%]">BEING INSPIRED FROM NATURE WE CREATED {product.name}</h2>
+             className="w-[500px] h-[300px] mx-auto md:mx-0 rounded-lg object-cover" />
+            <h2 className="text-center text-4xl font-semibold mt-3 md:mt-0 md:ml-10 md:w-[30%]">BEING INSPIRED FROM NATURE WE CREATED {product.name}</h2>
         </div>
         <div className="pb-5 text-center">
             <h1 className="bg-slate-900 text-white text-5xl py-5 font-bold">{product.name}</h1>
-            <p className="text-black py-5 px-4 md:px-28 sm:px-14 md:text-lg text-base">{product.description}</p>
+            <p className="text-black pt-3 px-4 md:px-28 sm:px-14 md:text-lg text-base">{product.description}</p>
             <ImageSlider gallery={product.gallery} />
         </div>
         </>
