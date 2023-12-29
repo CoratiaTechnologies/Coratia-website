@@ -27,7 +27,7 @@ function ImageSlider({gallery}) {
     <div className="main">
     <div className='flex items-center justify-center'>
       <button className='btns' onClick={handlePrevious}>P</button>
-      <img src={wordData.value} height="300" width="500" /> 
+      <img src={wordData.value} /> 
       <button className='btns' onClick={handleNext}>N</button>
     </div>
       <div className='flex_row'>

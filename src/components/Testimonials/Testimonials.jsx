@@ -148,7 +148,7 @@ export default function Testimonials() {
                 } flex items-center justify-between`}
                 key={content}
               >
-                <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 space-x-0 md:space-x-6">
+                <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 space-x-0 md:space-x-6">
                   <div className="flex flex-col items-center">
                     <img
                       alt="Mrs. Atashi Pramanik"
@@ -161,7 +161,7 @@ export default function Testimonials() {
                       }}
                       width="200"
                     />
-                    <p className="mt-4 text-lg font-semibold">
+                    <p className="mt-4 text-lg text-gray-700 font-semibold">
                       Mrs. Atashi Pramanik
                     </p>
                     <p className="text-sm text-gray-600">
@@ -171,14 +171,14 @@ export default function Testimonials() {
                       Rourkela Steel Plant, SAIL
                     </p>
                   </div>
-                  <div className="relative max-w-lg">
+                  <div className="relative h-max w-full lg:max-w-lg">
                     <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-12 h-12 transform rotate-180" />
-                    <p className="text-lg italic px-14 py-8 text-black">
+                    <p className="text-lg italic px-16 py-12 text-black">
                       Coratia Technologies' vision in the area of Robotics,
                       especially AUVs will herald a new beginning in Underwater
                       Surveillance of the water reservoirs in Steel Industries.
                     </p>
-                    <QuoteIcon className="absolute bottom-0 right-0 text-gray-400 w-12 h-12" />
+                    <QuoteIcon className="absolute bottom-2 right-2 text-gray-400 w-12 h-12" />
                   </div>
                 </div>
               </div>

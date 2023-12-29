@@ -11,11 +11,30 @@
   height: 480px;
   width: 800px;
   object-fit: cover;
-}
-  
+  border-radius: 7px;
+}  
 .thumbnail{
   padding-left: 20px;
 }
+@media screen and (max-width: 768px) {
+  .main img{
+    height: 360px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main img{
+    height: 216px;
+    width: 360px;
+  }
+  .btns{
+    display: none;
+  }
+  .thumbnail{
+    padding-left: 7px;
+  }
+}
+
 .thumbnail img{
   height: 70px;
   width: 100px;

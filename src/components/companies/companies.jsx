@@ -15,6 +15,14 @@ const Companies = () => {
       speed: 3000,
       autoplaySpeed: 3000,
       cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 491,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
     });
 
     const logos = [
@@ -30,13 +38,13 @@ const Companies = () => {
 
     return (
       <div className='bg-slate-100 w-full overflow-hidden px-5 md:px-10'>
-        <h2 className='text-black text-4xl md:text-5xl font-bold pb-5'>
+        <h2 className='text-black text-center text-4xl md:text-5xl font-bold pb-5'>
           Our Clients
         </h2>
         <Slider {...settings}>
           {logos.map((logo, index) => (
           <div key={index} className="container flex">
-            <img src={logo} alt='logo' className='h-20 m-auto' />
+            <img src={logo} alt='logo' className='h-16 sm:h-20 m-auto' />
           </div>
         ))}
         </Slider>
