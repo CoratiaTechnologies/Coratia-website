@@ -8,7 +8,7 @@ const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
   { title: "PRODUCT", id: 2, scroll: "/product/1" },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
-  { title: "CONTACT US", id: 4, scroll: "#contact" },
+  { title: "CONTACT US", id: 4, scroll: "/#contact" },
 ];
 
 function Navbar() {
@@ -39,21 +39,42 @@ function Navbar() {
             navbar ? "absolute" : "hidden"
           } h-[100vh] w-full top-[60px] bg-black md:h-auto md:w-auto md:flex md:items-center`}
         >
-          {navComponents.map((navComponent) => (
-            <li key={navComponent.id}>
-              <div className="w-full my-14 md:my-0 text-center">
-                <Link
-                  onClick={() => {
-                    if (navbar) setNavbar((navbar) => !navbar);
-                  }}
-                  href={navComponent.scroll}
-                  className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-cyan-600"
-                >
-                  {navComponent.title}
-                </Link>
-              </div>
-            </li>
-          ))}
+          {navComponents.map(
+            (navComponent, index) =>
+              index !== 1 &&
+              index !== navComponents.length - 1 && (
+                <li key={navComponent.id}>
+                  <div className="w-full my-14 md:my-0 text-center">
+                    <Link
+                      onClick={() => {
+                        if (navbar) setNavbar((navbar) => !navbar);
+                      }}
+                      href={navComponent.scroll}
+                      className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600"
+                    >
+                      {navComponent.title}
+                    </Link>
+                  </div>
+                </li>
+              )
+          )}
+          <li>
+            <div className="w-full my-14 md:my-0 text-center">
+              <Link
+                onClick={() => {
+                  if (navbar) setNavbar((navbar) => !navbar);
+                }}
+                href={
+                  navComponents.find(
+                    (component) => component.title === "CONTACT US"
+                  ).scroll
+                }
+                className="text-white bg-[#408E91] text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-black"
+              >
+                CONTACT US
+              </Link>
+            </div>
+          </li>
         </ul>
       </nav>
     </>
