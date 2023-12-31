@@ -1,11 +1,6 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
-.header {
-  margin: 50px auto;
-  text-align: center;
-  font-size: 80px;
-}
 .slide,
 .slide img {
   width: 580px;
@@ -14,22 +9,22 @@
   object-fit: cover;
 }
 .slide {
-  margin: 50px 0px;
+  margin: 20px 0px;
   filter: blur(3px);
-  transform: scale(0.65);
+  transform: scale(0.7);
   transition: 0.6s;
   border-radius: 12px;
 }
 .slide-active {
   filter: blur(0);
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1);
   transition: 0.8s;
   border-radius: 20px;
 }
 .carouselContainer {
   overflow: hidden;
-  padding-top: 10px;
+  padding-top: 1px;
   width: 100%;
   background-color: white;
 }
@@ -67,12 +62,9 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
-    font-size: 7vw;
-  }
   .slide,
   .slide img {
-    width: 300px;
+    width: 420px;
     aspect-ratio: 4/3;
     border-radius: 5px;
   }
@@ -81,7 +73,7 @@
     padding: 5px 15px;
     display: flex;
     position: absolute;
-    top: 40%;
+    top: 30%;
     color: gray;
     width: 50px;
     z-index: 100;
@@ -98,7 +90,7 @@
 }
 @media screen and (max-width: 554px) {
   .slider {
-    height: 300px;
+    height: 400px;
   }
   .slide,
   .slide img {
@@ -108,17 +100,17 @@
 }
 @media screen and (max-width: 491px) {
   .slide img {
-    height: 320px;
+    height: 280px;
     border-radius: 20px;
-    width: 270px;
+    width: 350px;
     position: relative;
     margin: auto;
   }
   .slide {
-    height: 320px;
+    height: 280px;
   }
   .slider {
-    height: 420px;
+    height: 300px;
   }
   .arrow {
     display: none;

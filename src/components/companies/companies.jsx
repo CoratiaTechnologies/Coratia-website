@@ -14,6 +14,8 @@ const Companies = () => {
       autoplay: true,
       speed: 3000,
       autoplaySpeed: 3000,
+      pauseOnHover: false,
+      swipeToSlide: false,
       cssEase: 'linear',
       responsive: [
         {
