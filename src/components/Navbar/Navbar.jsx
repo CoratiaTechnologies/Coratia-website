@@ -4,11 +4,10 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
-  { title: "PRODUCT", id: 2, scroll: "/product/1" },
+  { title: "PRODUCTS", id: 2, scroll: "/product/1" },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
   { title: "CONTACT US", id: 4, scroll: "/#contact" },
 ];
