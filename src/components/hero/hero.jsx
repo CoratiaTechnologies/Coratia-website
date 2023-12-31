@@ -10,7 +10,7 @@ export function HeroText() {
       style={{ fontSize: "13vw", mixBlendMode: "multiply" }}
       className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
     >
-      Best Startup
+      {herocontent.text}
     </h1>
   );
 }
