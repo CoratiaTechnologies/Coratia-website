@@ -1,4 +1,5 @@
 import React from "react";
+import { socials } from "../../../config/content/Socials";
 
 export default function Footer() {
   return (
@@ -35,6 +36,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
+                    target={"_blank"}
                     href="#contact"
                   >
                     Contact
@@ -43,6 +45,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
+                    target={"_blank"}
                     href="#"
                   >
                     Blog
@@ -51,6 +54,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
+                    target={"_blank"}
                     href="#"
                   >
                     Gallery
@@ -59,6 +63,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
+                    target={"_blank"}
                     href="#"
                   >
                     Career
@@ -74,7 +79,8 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
-                    href="#"
+                    target={"_blank"}
+                    href={socials.twitter}
                   >
                     Twitter
                   </a>
@@ -82,7 +88,8 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
-                    href="#"
+                    target={"_blank"}
+                    href={socials.facebook}
                   >
                     Facebook
                   </a>
@@ -90,7 +97,8 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
-                    href="#"
+                    target={"_blank"}
+                    href={socials.youtube}
                   >
                     Youtube
                   </a>
@@ -98,7 +106,8 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-base hover:text-gray-400 transition"
-                    href="#"
+                    target={"_blank"}
+                    href={socials.linkedin}
                   >
                     Linkedin
                   </a>
