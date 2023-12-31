@@ -17,7 +17,7 @@ function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <>
-      <nav className="md:flex justify-between items-center z-30 fixed w-full h-[60px] bg-black top-0">
+      <nav className="md:flex justify-between items-center z-30 fixed w-full h-[68px] bg-black top-0">
         <div className="flex justify-between items-center">
           <a href="/">
             <Image
