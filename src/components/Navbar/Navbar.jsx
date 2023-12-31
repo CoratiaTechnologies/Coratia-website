@@ -7,7 +7,14 @@ import Hamburger from "hamburger-react";
 
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
-  { title: "PRODUCTS", id: 2, scroll: "/product/1" },
+  {
+    title: "PRODUCTS",
+    id: 2,
+    list: [
+      { id: 1, title: "Product 1" },
+      { id: 2, title: "Product 2" },
+    ],
+  },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
   { title: "CONTACT US", id: 4, scroll: "/#contact" },
 ];
@@ -24,7 +31,7 @@ function Navbar() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               alt="coratia"
               height={"200"}
-              width={"200"}
+              width={"230"}
               className="cursor-pointer ml-4 sm:ml-12"
             />
           </a>
@@ -56,18 +63,14 @@ function Navbar() {
 
                   {dropdownVisible && (
                     <div className="md:absolute sm:block mt-2 bg-black p-2 shadow-md">
-                      <Link
-                        href="/product/1"
-                        className="block px-4 py-2 text-white hover:text-cyan-600"
-                      >
-                        Product 1
-                      </Link>
-                      <Link
-                        href="/product/2"
-                        className="block px-4 py-2 text-white hover:text-cyan-600"
-                      >
-                        Product 2
-                      </Link>
+                      {navComponent.list.map((product) => (
+                        <Link
+                          href={`/product/${product.id}`}
+                          className="block px-4 py-2 text-white hover:text-cyan-600"
+                        >
+                          {product.title}
+                        </Link>
+                      ))}
                     </div>
                   )}
                 </div>

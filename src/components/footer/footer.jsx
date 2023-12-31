@@ -1,5 +1,7 @@
 import React from "react";
 import { socials } from "../../../config/content/Socials";
+import { mapcontent } from "../../../config/content/Map";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,10 +23,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-medium text-[rgb(0,157,201)]">VISIT</h3>
-            <p className="mt-2 text-base">
-              Coratia Technologies Pvt. Ltd. Foundation for Technology &
-              Business Incubation, NIT Rourkela, Odisha
-            </p>
+            <p className="mt-2 text-base">{mapcontent.address}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-8">
@@ -34,13 +33,12 @@ export default function Footer() {
               </h3>
               <ul className="mt-2 space-y-2 text-white">
                 <li>
-                  <a
+                  <Link
                     className="text-base hover:text-gray-400 transition"
-                    target={"_blank"}
                     href="#contact"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -52,13 +50,12 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-base hover:text-gray-400 transition"
-                    target={"_blank"}
-                    href="#"
+                    href="/gallery"
                   >
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
