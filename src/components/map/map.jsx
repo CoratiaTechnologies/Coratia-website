@@ -20,7 +20,7 @@ export default function Map() {
           className="md:w-[50%] w-[100%] m-auto rounded-md"
         />
 
-        <div className="mt-2 md:mt-0 mx-auto md:pl-20 md:w-[40%]">
+        <div className="mt-2 md:mt-auto mx-auto md:pl-20 md:w-[40%] m-auto">
           <h1 className="text-5xl hidden md:block font-bold pt-7">
             Get in Touch
           </h1>
