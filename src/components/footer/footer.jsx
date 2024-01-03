@@ -16,14 +16,16 @@ export default function Footer() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               width="280"
             />
-            <p className="mt-4 md:pr-6 text-base text-center">
+            <p className="mt-4 md:pr-6 text-base md:text-left text-center">
               We create possibilities for the connected world. Be Bold.
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-medium text-[rgb(0,157,201)]">VISIT</h3>
-            <p className="mt-2 text-base text-center">{mapcontent.address}</p>
+            <p className="mt-2 text-base text-center md:text-left">
+              {mapcontent.address}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 gap-8">
@@ -114,7 +116,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center justify-between">
-          <p className="text-sm px-4">© 2022 Coratia Technologies</p>
+          <p className="text-sm text-center px-4">
+            © 2022 Coratia Technologies
+          </p>
           <div className="mt-4 md:mt-0 md:flex md:mr-10 md:space-x-6">
             <a className="text-sm hover:text-gray-400 transition px-4" href="#">
               Terms of Use

@@ -1,47 +1,6 @@
 import React from "react";
 import { Heading } from "../Typography";
-
-const achievements = [
-  {
-    id: 1,
-    text: "Achievement 1 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-  },
-  {
-    id: 2,
-    text: "Achievement 2",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-  },
-  {
-    id: 3,
-    text: "Achievement 3",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-  },
-  {
-    id: 4,
-    text: "Achievement 4",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-  },
-  {
-    id: 5,
-    text: "Achievement 5",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-  },
-  {
-    id: 6,
-    text: "Achievement 6",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-  },
-  {
-    id: 7,
-    text: "Achievement 7",
-    picture: "https://wallpaperaccess.com/full/2637581.jpg",
-  },
-];
+import { achievementcontent } from "../../../config/content/Achievements";
 
 export default function Achievements() {
   return (
@@ -58,7 +17,7 @@ export default function Achievements() {
       </div>
       <div className="w-full px-5 md:px-10 bg-white">
         <div className="flex flex-wrap w-full gap-x-1 gap-y-5 md:gap-y-10">
-          {achievements.map((item) => (
+          {achievementcontent.map((item) => (
             <div
               key={item.id}
               className="card border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden"
