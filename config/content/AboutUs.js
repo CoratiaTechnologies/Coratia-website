@@ -1,6 +1,8 @@
 export const aboutcontent = {
   video: "https://www.youtube.com/embed/e1lyC_ipKfQ?si=eKFh_vWLLhENDdQs",
-  content: `We, a team of alumni and faculties from NIT Rourkela, formed a company named Coratia Technologies Pvt. Ltd.
-    with an aim to provide end to end solution in the field of AUV and ROV by reducing the costs linked to
-    underwater operations and inspection. At present we are incubated at IHFC, IIT Delhi and FTBI, NIT Rourkela.`,
+  content: `Coratia Technologies Pvt. Ltd. is a trailblazing company specializing in 
+  underwater robotics. We offer comprehensive solutions in the field of 
+  Remotely Operated Vehicles (ROVs) and Autonomous Underwater 
+  Vehicles (AUVs), catering to a wide range of underwater challenges 
+  using cutting-edge technologies.`,
 };
