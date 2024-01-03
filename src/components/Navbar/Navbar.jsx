@@ -65,6 +65,9 @@ function Navbar() {
                     <div className="md:absolute sm:block mt-2 bg-black p-2 shadow-md">
                       {navComponent.list.map((product) => (
                         <Link
+                          onClick={() => {
+                            if (navbar) setNavbar((navbar) => !navbar);
+                          }}
                           href={`/product/${product.id}`}
                           className="block px-4 py-2 text-white hover:text-cyan-600"
                         >
