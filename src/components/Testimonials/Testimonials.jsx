@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";
-import styled from "styled-components";
 import { Heading } from "../Typography";
 
 const carouselContent = [
