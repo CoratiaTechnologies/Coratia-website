@@ -7,7 +7,7 @@ import "./Hero.css";
 export function HeroText() {
   return (
     <h1
-      style={{ fontSize: "13vw", mixBlendMode: "multiply" }}
+      style={{ fontSize: "7vw", lineHeight: "19vw", mixBlendMode: "multiply" }}
       className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
     >
       {herocontent.text}
