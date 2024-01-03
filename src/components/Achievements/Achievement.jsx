@@ -47,9 +47,21 @@ export default function Achievements() {
   return (
     <>
     <style>{`
-      .card:hover .hover-text{
-        display: flex;
+      .hover-text{
+        opacity: 0;
+        height: 0px;
+        transition: opacity 1s ease, height 1s ease;
       }
+      .card:hover .hover-text{
+        opacity: 1;
+        height: 240px;
+      }
+      @media (min-width: 768px) {
+        .card:hover .hover-text{
+            height: 340px;
+        }
+    }
+      
     `}</style>
 
       <div className="bg-white flex items-center justify-center">
@@ -65,7 +77,7 @@ export default function Achievements() {
               <div>
               <div 
                 className="text-center text-sm md:text-base text-black items-center
-                hidden hover-text relative h-[240px] md:h-[340px] z-30 w-full">
+                flex hover-text relative md:h-[340px] z-30 w-full">
                 {item.desc}
               </div>
               <img
