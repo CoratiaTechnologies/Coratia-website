@@ -32,7 +32,7 @@ export default function Map() {
             style={{
               fontSize: 20,
               padding: "5px 25px",
-              backgroundColor: "#408E91",
+              backgroundColor: "#1ca9c9",
               color: "white",
               borderRadius: 10,
               cursor: "pointer",

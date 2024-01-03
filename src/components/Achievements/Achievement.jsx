@@ -5,7 +5,7 @@ import { achievementcontent } from "../../../config/content/Achievements";
 export default function Achievements() {
   return (
     <>
-    <style>{`
+      <style>{`
       .hover-text{
         opacity: 0;
         height: 0px;
@@ -31,18 +31,19 @@ export default function Achievements() {
           {achievementcontent.map((item) => (
             <div
               key={item.id}
-              className="card border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden"
+              className="card border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden cursor-pointer"
             >
               <div>
-              <div 
-                className="text-center text-sm md:text-base text-black items-center
-                flex hover-text relative md:h-[340px] z-30 w-full">
-                {item.desc}
-              </div>
-              <img
-                src={item.picture}
-                className="md:h-[280px] h-[170px] w-full rounded-sm object-cover"
-              />
+                <div
+                  className="text-center text-sm md:text-base text-black items-center
+                flex hover-text relative md:h-[340px] z-30 w-full"
+                >
+                  {item.desc}
+                </div>
+                <img
+                  src={item.picture}
+                  className="md:h-[280px] h-[170px] w-full rounded-sm object-cover"
+                />
               </div>
               <p className="text-center text-sm md:text-base text-black">
                 {item.text}
