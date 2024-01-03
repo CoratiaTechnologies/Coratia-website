@@ -32,7 +32,7 @@ function Navbar() {
               alt="coratia"
               height={"200"}
               width={"230"}
-              className="cursor-pointer ml-4 sm:ml-12"
+              className="cursor-pointer ml-4 sm:ml-12 md:mt-0 mt-3"
             />
           </a>
           <span className="md:hidden relative px-4">
