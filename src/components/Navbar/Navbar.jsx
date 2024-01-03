@@ -67,6 +67,7 @@ function Navbar() {
                         <Link
                           onClick={() => {
                             if (navbar) setNavbar((navbar) => !navbar);
+                            setDropdownVisible((prevVisible) => !prevVisible);
                           }}
                           href={`/product/${product.id}`}
                           className="block px-4 py-2 text-white hover:text-cyan-600"
@@ -88,7 +89,7 @@ function Navbar() {
                     href={navComponent.scroll}
                     className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black"
                   >
-                    CONTACT US
+                    {navComponent.title}
                   </Link>
                 </div>
               </li>
