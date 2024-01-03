@@ -5,7 +5,7 @@ import "./Testimonial.css";
 import styled from "styled-components";
 import { Heading } from "../Typography";
 
-const carouselContent = [
+const testimonials = [
   {
     id: 1,
     picture: "https://i.ibb.co/ncrXc2V/1.png",
@@ -127,7 +127,7 @@ export default function Testimonials() {
             nextArrow={settings.nextArrow}
             responsive={settings.responsive}
           >
-            {carouselContent.map((content, index) => (
+            {testimonials.map((content, index) => (
               <div
                 className={`${
                   index === slideIndex ? "slide2 slide-active2" : "slide2"
@@ -150,21 +150,21 @@ export default function Testimonials() {
                     <p className="mt-4 text-lg text-gray-700 font-semibold">
                       Mrs. Atashi Pramanik
                     </p>
-                    <p className="text-sm text-gray-600">
-                      Ex - CGM In-Charge (Automation, Instrumentation & IT)
+                    <p className="text-sm px-1 text-gray-600">
+                      Ex-CGM In-Charge (Automation, Instrumentation & IT)
                     </p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm px-1 text-gray-600">
                       Rourkela Steel Plant, SAIL
                     </p>
                   </div>
                   <div className="relative h-max w-full lg:max-w-lg">
                     <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-12 h-12 transform rotate-180" />
-                    <p className="text-lg italic px-16 py-12 text-black">
+                    <p className="text-base sm:text-lg italic px-10 sm:px-16 py-10 sm:py-12 text-black">
                       Coratia Technologies' vision in the area of Robotics,
                       especially AUVs will herald a new beginning in Underwater
                       Surveillance of the water reservoirs in Steel Industries.
                     </p>
-                    <QuoteIcon className="absolute bottom-2 right-2 text-gray-400 w-12 h-12" />
+                    <QuoteIcon className="absolute bottom-4 right-4 text-gray-400 w-12 h-12" />
                   </div>
                 </div>
               </div>
