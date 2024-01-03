@@ -16,14 +16,14 @@ export default function Footer() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               width="280"
             />
-            <p className="mt-4 md:pr-6 text-base">
+            <p className="mt-4 md:pr-6 text-base text-center">
               We create possibilities for the connected world. Be Bold.
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-medium text-[rgb(0,157,201)]">VISIT</h3>
-            <p className="mt-2 text-base">{mapcontent.address}</p>
+            <p className="mt-2 text-base text-center">{mapcontent.address}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-8">
@@ -34,7 +34,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2 text-white">
                 <li>
                   <Link
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     href="#contact"
                   >
                     Contact
@@ -42,7 +42,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href="#"
                   >
@@ -51,7 +51,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     href="/gallery"
                   >
                     Gallery
@@ -59,7 +59,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href="#"
                   >
@@ -75,7 +75,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2 text-white">
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.twitter}
                   >
@@ -84,7 +84,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.facebook}
                   >
@@ -93,7 +93,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.youtube}
                   >
@@ -102,7 +102,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-base hover:text-gray-400 transition"
+                    className="sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.linkedin}
                   >
