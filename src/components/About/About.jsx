@@ -1,14 +1,9 @@
 import React from "react";
 import { aboutcontent } from "../../../config/content/AboutUs";
-
-const ytvid = "https://www.youtube.com/embed/e1lyC_ipKfQ?si=eKFh_vWLLhENDdQs";
-
+import { Heading } from "../Typography";
 export default function AboutUs() {
   return (
-    <div className="text-black md:py-7 bg-white">
-      <h2 className="text-4xl md:hidden block font-bold py-5 px-10">
-        About Us
-      </h2>
+    <div className="text-black md:py-24 bg-white">
       <div className="flex flex-wrap w-full">
         <div className="w-full md:w-1/2 px-4 md:px-10">
           <iframe
@@ -24,7 +19,7 @@ export default function AboutUs() {
           />
         </div>
         <div className="w-full md:w-1/2 p-6 md:p-12">
-          <h2 className="text-5xl hidden md:block font-bold mb-6">About Us</h2>
+          <Heading className="text-xl hidden md:block mb-6">About Us</Heading>
           <p className="text-base md:text-lg">{aboutcontent.content}</p>
         </div>
       </div>

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";
-import styled from "styled-components";
 import { Heading } from "../Typography";
 
 const testimonials = [
@@ -113,7 +112,7 @@ export default function Testimonials() {
         <Heading className="mt-10 mb-10">TESTIMONIALS</Heading>
       </div>
 
-      <div className="carouselContainer2">
+      <div className="carouselContainer2 md:pl-10 md:pr-14">
         <div className="slider2">
           <Slider
             centerMode={settings.centerMode}

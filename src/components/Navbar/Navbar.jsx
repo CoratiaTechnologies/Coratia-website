@@ -32,7 +32,7 @@ function Navbar() {
               alt="coratia"
               height={"200"}
               width={"230"}
-              className="cursor-pointer ml-4 sm:ml-12"
+              className="cursor-pointer ml-4 sm:ml-12 md:mt-0 mt-3"
             />
           </a>
           <span className="md:hidden relative px-4">
@@ -65,6 +65,9 @@ function Navbar() {
                     <div className="md:absolute sm:block mt-2 bg-black p-2 shadow-md">
                       {navComponent.list.map((product) => (
                         <Link
+                          onClick={() => {
+                            if (navbar) setNavbar((navbar) => !navbar);
+                          }}
                           href={`/product/${product.id}`}
                           className="block px-4 py-2 text-white hover:text-cyan-600"
                         >
@@ -83,7 +86,7 @@ function Navbar() {
                       if (navbar) setNavbar((navbar) => !navbar);
                     }}
                     href={navComponent.scroll}
-                    className="text-white bg-[#408E91] text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-black"
+                    className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black"
                   >
                     CONTACT US
                   </Link>
