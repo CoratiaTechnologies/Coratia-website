@@ -16,7 +16,7 @@ const navComponents = [
     ],
   },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
-  { title: "BOOK NOW", id: 4, scroll: "/#contact" },
+  { title: "BOOK NOW", id: 4, scroll: "#contact" },
 ];
 
 function Navbar() {
