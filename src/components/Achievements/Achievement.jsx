@@ -5,19 +5,22 @@ import { achievementcontent } from "../../../config/content/Achievements";
 export default function Achievements() {
   return (
     <>
-      <style>{`
+    <style>{`
       .hover-text{
-        visibility: hidden;
         opacity: 0;
-        transition: opacity 3s ease, visibility 3s ease;
+        height: 0px;
+        transition: opacity 1s ease, height 1s ease;
       }
       .card:hover .hover-text{
-        display:flex;
-        visibility: visible;
         opacity: 1;
-        height: 340px;
-        cursor: pointer;
+        height: 240px;
       }
+      @media (min-width: 768px) {
+        .card:hover .hover-text{
+            height: 340px;
+        }
+    }
+      
     `}</style>
 
       <div className="bg-white flex items-center justify-center md:pt-7">
@@ -31,16 +34,15 @@ export default function Achievements() {
               className="card border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden"
             >
               <div>
-                <div
-                  className="text-center text-sm md:text-base text-black items-center
-                 hover-text relative h-[0px] md:h-[340px] z-30 w-full"
-                >
-                  {item.desc}
-                </div>
-                <img
-                  src={item.picture}
-                  className="md:h-[280px] h-[170px] w-full rounded-sm object-cover"
-                />
+              <div 
+                className="text-center text-sm md:text-base text-black items-center
+                flex hover-text relative md:h-[340px] z-30 w-full">
+                {item.desc}
+              </div>
+              <img
+                src={item.picture}
+                className="md:h-[280px] h-[170px] w-full rounded-sm object-cover"
+              />
               </div>
               <p className="text-center text-sm md:text-base text-black">
                 {item.text}

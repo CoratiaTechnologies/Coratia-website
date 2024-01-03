@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ImageSlider.css';
+import { ChevronLeft, ChevronRight } from "react-feather";
+
 function ImageSlider({gallery}) {
   
   const imgs = gallery
@@ -26,9 +28,13 @@ function ImageSlider({gallery}) {
   return (
     <div className="main">
     <div className='flex items-center justify-center'>
-      <button className='btns' onClick={handlePrevious}>P</button>
+      <button className='btns' onClick={handlePrevious}>
+        <ChevronLeft size={40} />
+      </button>
       <img src={wordData.value} /> 
-      <button className='btns' onClick={handleNext}>N</button>
+      <button className='btns' onClick={handleNext}>
+        <ChevronRight size={40} />
+      </button>
     </div>
       <div className='flex_row'>
         {imgs.map((data,i)=>
