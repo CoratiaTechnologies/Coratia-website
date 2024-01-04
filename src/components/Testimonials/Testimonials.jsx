@@ -3,33 +3,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";
 import { Heading } from "../Typography";
-
-const testimonials = [
-  {
-    id: 1,
-    picture: "https://i.ibb.co/ncrXc2V/1.png",
-    text: `Coratia Technologies' vision in the area of Robotics,
-    especially AUVs will herald a new beginning in Underwater
-    Surveillance of the water reservoirs in Steel Industries.`,
-    speaker: "Speaker 1",
-  },
-  {
-    id: 2,
-    picture: "https://i.ibb.co/B3s7v4h/2.png",
-    text: `Coratia Technologies' vision in the area of Robotics,
-    especially AUVs will herald a new beginning in Underwater
-    Surveillance of the water reservoirs in Steel Industries.`,
-    speaker: "Speaker 2",
-  },
-  {
-    id: 3,
-    picture: "https://i.ibb.co/XXR8kzF/3.png",
-    text: `Coratia Technologies' vision in the area of Robotics,
-    especially AUVs will herald a new beginning in Underwater
-    Surveillance of the water reservoirs in Steel Industries.`,
-    speaker: "Speaker 3",
-  },
-];
+import { testimonials } from "../../../config/content/Testimonial";
 
 function QuoteIcon(props) {
   return (
@@ -126,20 +100,20 @@ export default function Testimonials() {
             nextArrow={settings.nextArrow}
             responsive={settings.responsive}
           >
-            {testimonials.map((content, index) => (
+            {testimonials.map((testimonial, index) => (
               <div
                 className={`${
                   index === slideIndex ? "slide2 slide-active2" : "slide2"
                 } flex items-center justify-between`}
-                key={content}
+                key={index}
               >
                 <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 space-x-0 md:space-x-6">
                   <div className="flex flex-col items-center">
                     <img
-                      alt="Mrs. Atashi Pramanik"
+                      alt={testimonial.name}
                       className="rounded-lg border-4"
                       height="200"
-                      src={content.picture}
+                      src={testimonial.picture}
                       style={{
                         aspectRatio: "200/200",
                         objectFit: "cover",
@@ -147,21 +121,18 @@ export default function Testimonials() {
                       width="200"
                     />
                     <p className="mt-4 text-lg text-gray-700 font-semibold">
-                      Mrs. Atashi Pramanik
+                      {testimonial.name}
                     </p>
                     <p className="text-sm px-1 text-gray-600 text-center">
-                      Ex-CGM In-Charge (Automation, Instrumentation & IT)
-                    </p>
-                    <p className="text-sm px-1 text-gray-600">
-                      Rourkela Steel Plant, SAIL
+                      {testimonial.designation}
+                      <br />
+                      {testimonial.organisation}
                     </p>
                   </div>
                   <div className="relative h-max w-full lg:max-w-lg">
                     <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-12 h-12 transform rotate-180" />
                     <p className="text-base sm:text-lg italic px-10 sm:px-16 py-10 sm:py-12 text-black">
-                      Coratia Technologies' vision in the area of Robotics,
-                      especially AUVs will herald a new beginning in Underwater
-                      Surveillance of the water reservoirs in Steel Industries.
+                      {testimonial.text}
                     </p>
                     <QuoteIcon className="absolute bottom-4 right-4 text-gray-400 w-12 h-12" />
                   </div>
