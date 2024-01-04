@@ -6,12 +6,30 @@ import "./Hero.css";
 
 export function HeroText() {
   return (
-    <h1
-      style={{ fontSize: "7vw", lineHeight: "19vw", mixBlendMode: "multiply" }}
-      className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
-    >
-      {herocontent.text}
-    </h1>
+    <div className="relative">
+      <h1
+        style={{
+          fontSize: "7vw",
+          lineHeight: "19vw",
+          mixBlendMode: "multiply",
+        }}
+        className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
+      >
+        {herocontent.text}
+      </h1>
+      <div
+        style={{
+          backgroundColor: "rgba(235,235,235,0.1)",
+          backdropFilter: "blur(10px)",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+        }}
+      ></div>
+    </div>
   );
 }
 
