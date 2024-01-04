@@ -149,7 +149,7 @@ export default function Testimonials() {
                     <p className="mt-4 text-lg text-gray-700 font-semibold">
                       Mrs. Atashi Pramanik
                     </p>
-                    <p className="text-sm px-1 text-gray-600">
+                    <p className="text-sm px-1 text-gray-600 text-center">
                       Ex-CGM In-Charge (Automation, Instrumentation & IT)
                     </p>
                     <p className="text-sm px-1 text-gray-600">
