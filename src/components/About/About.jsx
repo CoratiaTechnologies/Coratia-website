@@ -4,6 +4,7 @@ import { Heading } from "../Typography";
 export default function AboutUs() {
   return (
     <div className="text-black md:py-24 bg-white">
+      <Heading className="text-center block md:hidden py-7">About Us</Heading>
       <div className="flex flex-wrap w-full">
         <div className="w-full md:w-1/2 px-4 md:px-10">
           <iframe

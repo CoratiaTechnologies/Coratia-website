@@ -10,7 +10,13 @@ export const Heading = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 968px) {
+    font-size: 4.5rem;
+  }
   @media (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+  }
+  @media (max-width: 491px) {
+    font-size: 2.6rem;
   }
 `;
