@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const mage =
   "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704292661/tata_wedojq.svg";
@@ -40,14 +41,11 @@ const Companies = () => {
   ];
 
   return (
-    <div className="bg-slate-100 w-full overflow-hidden px-5 md:px-10">
-      <h2 className="text-black text-center text-4xl md:text-5xl font-bold pb-5">
-        Our Clients
-      </h2>
+    <div className="bg-slate-100 w-full overflow-hidden py-5 px-5 md:px-10">
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className="container flex">
-            <img src={logo} alt="logo" className="h-16 sm:h-20 m-auto" />
+            <Image src={logo} alt="logo" width={150} height={80} className="h-12 sm:h-20 m-auto" />
           </div>
         ))}
       </Slider>

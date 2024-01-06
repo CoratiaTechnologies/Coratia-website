@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading } from "../Typography";
+import Image from "next/image";
 import { achievementcontent } from "../../../config/content/Achievements";
 
 export default function Achievements() {
@@ -23,15 +24,15 @@ export default function Achievements() {
       
     `}</style>
 
-      <div className="bg-white flex items-center justify-center md:pt-7">
-        <Heading className="py-14">Achievements</Heading>
+      <div className="bg-white flex items-center justify-center pt-3 md:pt-7">
+        <Heading className="py-5 md:py-10">Achievements</Heading>
       </div>
       <div className="w-full px-5 md:px-10 bg-white">
         <div className="flex flex-wrap w-full gap-x-1 gap-y-5 md:gap-y-10">
           {achievementcontent.map((item) => (
             <div
               key={item.id}
-              className="card border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden cursor-pointer"
+              className="card rounded-xl border-2 mx-auto shadow-xl md:w-[540px] md:h-[340px] w-[300px] h-[240px] overflow-hidden cursor-pointer"
             >
               <div>
                 <div
@@ -40,9 +41,12 @@ export default function Achievements() {
                 >
                   {item.desc}
                 </div>
-                <img
+                <Image
                   src={item.picture}
-                  className="md:h-[280px] h-[170px] w-full rounded-sm object-cover"
+                  alt=""
+                  width={540}
+                  height={280}
+                  className="md:h-[280px] h-[170px] w-full object-cover"
                 />
               </div>
               <p className="text-center text-sm md:text-base text-black">

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { herocontent } from "../../../config/content/Hero";
 import HashLoader from "react-spinners/HashLoader";
+import Image from "next/image";
 import "./Hero.css";
 
 export function HeroText() {
@@ -9,7 +10,7 @@ export function HeroText() {
     <div className="relative">
       <h1
         style={{
-          fontSize: "7vw",
+          fontSize: "6.8vw",
           lineHeight: "19vw",
           mixBlendMode: "multiply",
         }}
@@ -48,6 +49,8 @@ export default function Hero() {
         <img
           src={herocontent.video}
           alt=""
+          width={1080}
+          height={720}
           className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
         />
 
@@ -69,9 +72,11 @@ export default function Hero() {
                text-white btn text-base sm:mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
-                <img
+                <Image
                   src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702630222/play_kmg3ur.png"
                   alt=""
+                  width={28}
+                  height={28}
                   className="mr-2.5 w-[28px] h-[28px]"
                 />
                 Enhance Your Experience

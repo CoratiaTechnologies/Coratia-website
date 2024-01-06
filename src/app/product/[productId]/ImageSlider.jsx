@@ -31,7 +31,7 @@ function ImageSlider({gallery}) {
       <button className='btns' onClick={handlePrevious}>
         <ChevronLeft size={40} />
       </button>
-      <img src={wordData.value} /> 
+      <img src={wordData.value} alt='' width={800} height={480} /> 
       <button className='btns' onClick={handleNext}>
         <ChevronRight size={40} />
       </button>
