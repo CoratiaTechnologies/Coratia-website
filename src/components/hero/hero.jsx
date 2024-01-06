@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <>
       <div className="hero-section w-full max-w-full overflow-hidden">
-        <Image
+        <img
           src={herocontent.video}
           alt=""
           width={1080}
