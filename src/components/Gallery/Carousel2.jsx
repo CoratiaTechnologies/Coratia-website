@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
 import './carouselstyles.css';
 
 function CustomPrevArrow({ onClick }) {
@@ -76,7 +77,7 @@ function Carousel2({carouselImages}) {
         >
           {carouselImages.map((imgUrl, index) => (
             <div className={index === slideIndex ? 'slide slide-active' : 'slide'} key={imgUrl}>
-              <img className='carousel-img object-cover' src={imgUrl} alt={`Alt ${index}`} />
+              <Image className='carousel-img object-cover' src={imgUrl} width={580} height={435} alt={`Alt ${index}`} />
             </div>
           ))}
         </Slider>

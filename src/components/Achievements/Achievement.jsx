@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading } from "../Typography";
+import Image from "next/image";
 import { achievementcontent } from "../../../config/content/Achievements";
 
 export default function Achievements() {
@@ -40,8 +41,11 @@ export default function Achievements() {
                 >
                   {item.desc}
                 </div>
-                <img
+                <Image
                   src={item.picture}
+                  alt=""
+                  width={540}
+                  height={280}
                   className="md:h-[280px] h-[170px] w-full object-cover"
                 />
               </div>

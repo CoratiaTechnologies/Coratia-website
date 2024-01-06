@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const mage =
   "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704292661/tata_wedojq.svg";
@@ -44,7 +45,7 @@ const Companies = () => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className="container flex">
-            <img src={logo} alt="logo" className="h-12 sm:h-20 m-auto" />
+            <Image src={logo} alt="logo" width={150} height={80} className="h-12 sm:h-20 m-auto" />
           </div>
         ))}
       </Slider>

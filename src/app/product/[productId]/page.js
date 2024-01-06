@@ -38,6 +38,9 @@ function productPage() {
         <div className="md:flex items-center justify-center pt-24 pb-7 px-5 md:px-10 text-black">
             <img
              src={product.image}
+             alt=""
+             width={500}
+             height={300}
              className="w-[500px] h-[300px] mx-auto md:mx-0 rounded-lg object-cover" />
             <h2 className="text-center sm:text-4xl text-3xl font-semibold mt-3 md:mt-0 md:ml-10 md:w-[30%]">BEING INSPIRED FROM NATURE WE CREATED {product.name}</h2>
         </div>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";
+import Image from "next/image";
 import { Heading } from "../Typography";
 import { testimonials } from "../../../config/content/Testimonial";
 
@@ -110,15 +111,11 @@ export default function Testimonials() {
                 <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 space-x-0 md:space-x-6">
                   <div className="flex flex-col items-center">
                     <img
-                      alt={testimonial.name}
-                      className="rounded-lg border-4"
-                      height="200"
                       src={testimonial.picture}
-                      style={{
-                        aspectRatio: "200/200",
-                        objectFit: "cover",
-                      }}
-                      width="200"
+                      alt={testimonial.name}
+                      width={200}
+                      height={200}
+                      className="rounded-lg border-4 object-cover"
                     />
                     <p className="mt-4 text-lg text-gray-700 font-semibold">
                       {testimonial.name}

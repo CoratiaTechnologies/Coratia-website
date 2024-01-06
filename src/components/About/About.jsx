@@ -12,6 +12,7 @@ export default function AboutUs() {
             className="object-cover w-full h-full rounded-md"
             height="500"
             src={aboutcontent.video}
+            loading="lazy"
             style={{
               aspectRatio: "900/500",
               objectFit: "cover",
