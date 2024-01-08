@@ -24,7 +24,7 @@ export default function Achievements() {
       
     `}</style>
 
-      <div className="bg-white flex items-center justify-center pt-3 md:pt-7">
+      <div className="bg-white flex items-center justify-center pt-6 md:pt-10">
         <Heading className="py-5 md:py-10">Achievements</Heading>
       </div>
       <div className="w-full px-5 md:px-10 bg-white">
