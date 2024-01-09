@@ -16,7 +16,7 @@ const navComponents = [
     ],
   },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
-  { title: "BOOK NOW", id: 4, scroll: "#contact" },
+  { title: "BOOK NOW", id: 4, scroll: "/#contact" },
 ];
 
 function Navbar() {
@@ -53,8 +53,13 @@ function Navbar() {
               <li key={navComponent.id}>
                 <div className="w-full my-14 md:my-0 text-center">
                   <button
-                    onClick={() => {
-                      setDropdownVisible((prevVisible) => !prevVisible);
+                    onFocus={() => {
+                      setDropdownVisible(true);
+                    }}
+                    onBlur={() => {
+                      setTimeout(() => {
+                        setDropdownVisible(false);
+                      }, 200);
                     }}
                     className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 focus:outline-none"
                   >
@@ -67,7 +72,6 @@ function Navbar() {
                         <Link
                           onClick={() => {
                             if (navbar) setNavbar((navbar) => !navbar);
-                            setDropdownVisible((prevVisible) => !prevVisible);
                           }}
                           href={`/product/${product.id}`}
                           className="block px-4 py-2 text-white hover:text-cyan-600"
@@ -82,7 +86,7 @@ function Navbar() {
             ) : index === navComponents.length - 1 ? (
               <li key={navComponent.id}>
                 <div className="w-full my-14 md:my-0 text-center">
-                  <Link
+                  <a
                     onClick={() => {
                       if (navbar) setNavbar((navbar) => !navbar);
                     }}
@@ -90,7 +94,7 @@ function Navbar() {
                     className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black"
                   >
                     {navComponent.title}
-                  </Link>
+                  </a>
                 </div>
               </li>
             ) : (
