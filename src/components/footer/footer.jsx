@@ -5,11 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 const logos = {
-  twitter: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/kfe6h6qn9qnbzd0os3wq",
-  insta: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/z4rfmtietyr4nloohdf7",
-  youtube: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/vg7th3moh4iyemciitkh",
-  linkedin: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/elnncesqx6o7f2ev2hoe",
-}
+  twitter:
+    "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/kfe6h6qn9qnbzd0os3wq",
+  insta:
+    "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/z4rfmtietyr4nloohdf7",
+  youtube:
+    "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/vg7th3moh4iyemciitkh",
+  linkedin:
+    "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/elnncesqx6o7f2ev2hoe",
+};
 
 export default function Footer() {
   return (
@@ -30,7 +34,9 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">VISIT</h3>
+            <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
+              VISIT
+            </h3>
             <p className="mt-2 text-sm px-5 md:px-0 md:text-base text-center md:text-left">
               {mapcontent.address}
             </p>
@@ -89,7 +95,13 @@ export default function Footer() {
                     target={"_blank"}
                     href={socials.twitter}
                   >
-                    <Image width={32} height={32} alt="twitter" src={logos.twitter} className="mr-1 h-5 w-5"></Image>
+                    <Image
+                      width={32}
+                      height={32}
+                      alt="twitter"
+                      src={logos.twitter}
+                      className="mr-1 h-5 w-5"
+                    ></Image>
                     Twitter
                   </a>
                 </li>
@@ -97,9 +109,15 @@ export default function Footer() {
                   <a
                     className="flex items-center sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
-                    href={socials.insta}
+                    href={socials.instagram}
                   >
-                    <Image width={32} height={32} alt="insta" src={logos.insta} className="mr-1 h-5 w-5"></Image>
+                    <Image
+                      width={32}
+                      height={32}
+                      alt="insta"
+                      src={logos.insta}
+                      className="mr-1 h-5 w-5"
+                    ></Image>
                     Instagram
                   </a>
                 </li>
@@ -109,7 +127,13 @@ export default function Footer() {
                     target={"_blank"}
                     href={socials.youtube}
                   >
-                    <Image width={32} height={32} alt="youtube" src={logos.youtube} className="mr-1 h-5 w-5"></Image>
+                    <Image
+                      width={32}
+                      height={32}
+                      alt="youtube"
+                      src={logos.youtube}
+                      className="mr-1 h-5 w-5"
+                    ></Image>
                     Youtube
                   </a>
                 </li>
@@ -119,34 +143,63 @@ export default function Footer() {
                     target={"_blank"}
                     href={socials.linkedin}
                   >
-                    <Image width={32} height={32} alt="linkedin" src={logos.linkedin} className="mr-1 h-5 w-5"></Image>
+                    <Image
+                      width={32}
+                      height={32}
+                      alt="linkedin"
+                      src={logos.linkedin}
+                      className="mr-1 h-5 w-5"
+                    ></Image>
                     Linkedin
                   </a>
                 </li>
               </ul>
             </div>
-            
           </div>
         </div>
-            <div className="block md:hidden mt-4 w-full flex-col text-center">
-              <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
-                SOCIALS
-              </h3>
-              <div className="flex justify-center">
-                <a href={socials.twitter} target={"_blank"}>
-                  <Image width={32} height={32} alt="twitter" src={logos.twitter} className="m-2 h-7 w-7"></Image>
-                </a>
-                <a href={socials.insta} target={"_blank"}>
-                  <Image width={32} height={32} alt="facebook" src={logos.insta} className="m-2 h-7 w-7"></Image>
-                </a>
-                <a href={socials.youtube} target={"_blank"}>
-                  <Image width={32} height={32} alt="youtube" src={logos.youtube} className="m-2 h-7 w-7"></Image>
-                </a>
-                <a href={socials.linkedin} target={"_blank"}>
-                  <Image width={32} height={32} alt="linkedin" src={logos.linkedin} className="m-2 h-7 w-7"></Image>
-                </a>
-                </div>
-              </div>
+        <div className="block md:hidden mt-4 w-full flex-col text-center">
+          <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
+            SOCIALS
+          </h3>
+          <div className="flex justify-center">
+            <a href={socials.twitter} target={"_blank"}>
+              <Image
+                width={32}
+                height={32}
+                alt="twitter"
+                src={logos.twitter}
+                className="m-2 h-7 w-7"
+              ></Image>
+            </a>
+            <a href={socials.instagram} target={"_blank"}>
+              <Image
+                width={32}
+                height={32}
+                alt="instagram"
+                src={logos.insta}
+                className="m-2 h-7 w-7"
+              ></Image>
+            </a>
+            <a href={socials.youtube} target={"_blank"}>
+              <Image
+                width={32}
+                height={32}
+                alt="youtube"
+                src={logos.youtube}
+                className="m-2 h-7 w-7"
+              ></Image>
+            </a>
+            <a href={socials.linkedin} target={"_blank"}>
+              <Image
+                width={32}
+                height={32}
+                alt="linkedin"
+                src={logos.linkedin}
+                className="m-2 h-7 w-7"
+              ></Image>
+            </a>
+          </div>
+        </div>
         <div className="mt-4 md:mt-8 border-t border-gray-200 pt-4 md:pt-8 md:flex md:items-center justify-between">
           <p className="text-sm text-center px-4">
             © 2022 Coratia Technologies
