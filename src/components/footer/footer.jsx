@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const logos = {
-  twitter: "",
-  facebook: "",
-  youtube: "",
-  linkedin: "",
+  twitter: "https://coratia.com/assets/image/social/twitter.svg",
+  insta: "https://coratia.com/assets/image/social/insta.svg",
+  youtube: "https://coratia.com/assets/image/social/youtube.svg",
+  linkedin: "https://coratia.com/assets/image/social/linkedin.svg",
 }
 
 export default function Footer() {
@@ -36,12 +36,12 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8">
+          <div className="md:grid md:grid-cols-2 md:gap-8">
             <div className="flex flex-col items-center md:items-start">
               <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
                 COMPANY
               </h3>
-              <ul className="mt-2 space-y-0.5 md:space-y-2 text-white">
+              <ul className="mt-1 space-y-0.5 md:space-y-2 text-center md:text-left text-white">
                 <li>
                   <Link
                     className="sm:text-base text-sm hover:text-gray-400 transition"
@@ -78,67 +78,76 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col items-center md:items-start">
+            <div className="hidden md:flex md:flex-col items-center md:items-start">
               <h3 className="text-lg sm:text-xl mr-2 font-medium text-[rgb(0,157,201)]">
                 SOCIAL
               </h3>
-              <ul className="hidden md:block mt-2 space-y-0.5 md:space-y-2 text-white">
+              <ul className="mt-2 space-y-0.5 md:space-y-2 text-white">
                 <li>
                   <a
-                    className="sm:text-base text-sm hover:text-gray-400 transition"
+                    className="flex items-center sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.twitter}
                   >
+                    <Image width={32} height={32} alt="twitter" src={logos.twitter} className="mr-1 h-5 w-5"></Image>
                     Twitter
                   </a>
                 </li>
                 <li>
                   <a
-                    className="sm:text-base text-sm hover:text-gray-400 transition"
+                    className="flex items-center sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
-                    href={socials.facebook}
+                    href={socials.insta}
                   >
-                    Facebook
+                    <Image width={32} height={32} alt="insta" src={logos.insta} className="mr-1 h-5 w-5"></Image>
+                    Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    className="sm:text-base text-sm hover:text-gray-400 transition"
+                    className="flex items-center sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.youtube}
                   >
+                    <Image width={32} height={32} alt="youtube" src={logos.youtube} className="mr-1 h-5 w-5"></Image>
                     Youtube
                   </a>
                 </li>
                 <li>
                   <a
-                    className="sm:text-base text-sm hover:text-gray-400 transition"
+                    className="flex items-center sm:text-base text-sm hover:text-gray-400 transition"
                     target={"_blank"}
                     href={socials.linkedin}
                   >
+                    <Image width={32} height={32} alt="linkedin" src={logos.linkedin} className="mr-1 h-5 w-5"></Image>
                     Linkedin
                   </a>
                 </li>
               </ul>
-
-              <div className="mt-4 grid grid-cols-2 space-x-2 space-y-2">
-                <a href={socials.twitter} target={"_blank"}>
-                  <Image width={16} height={16} alt="twitter" src={logos.twitter} className="h-4 w-4"></Image>
-                </a>
-                <a href={socials.facebook} target={"_blank"}>
-                  <Image width={16} height={16} alt="facebook" src={logos.facebook} className="h-4 w-4"></Image>
-                </a>
-                <a href={socials.youtube} target={"_blank"}>
-                  <Image width={16} height={16} alt="youtube" src={logos.youtube} className="h-4 w-4"></Image>
-                </a>
-                <a href={socials.linkedin} target={"_blank"}>
-                  <Image width={16} height={16} alt="linkedin" src={logos.linkedin} className="h-4 w-4"></Image>
-                </a>
-              </div>
             </div>
+            
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-4 md:pt-8 md:flex md:items-center justify-between">
+            <div className="block md:hidden mt-4 w-full flex-col text-center">
+              <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
+                SOCIALS
+              </h3>
+              <div className="flex justify-center">
+                <a href={socials.twitter} target={"_blank"}>
+                  <Image width={32} height={32} alt="twitter" src={logos.twitter} className="m-2 h-7 w-7"></Image>
+                </a>
+                <a href={socials.insta} target={"_blank"}>
+                  <Image width={32} height={32} alt="facebook" src={logos.insta} className="m-2 h-7 w-7"></Image>
+                </a>
+                <a href={socials.youtube} target={"_blank"}>
+                  <Image width={32} height={32} alt="youtube" src={logos.youtube} className="m-2 h-7 w-7"></Image>
+                </a>
+                <a href={socials.linkedin} target={"_blank"}>
+                  <Image width={32} height={32} alt="linkedin" src={logos.linkedin} className="m-2 h-7 w-7"></Image>
+                </a>
+                </div>
+              </div>
+        <div className="mt-4 md:mt-8 border-t border-gray-200 pt-4 md:pt-8 md:flex md:items-center justify-between">
           <p className="text-sm text-center px-4">
             © 2022 Coratia Technologies
           </p>
