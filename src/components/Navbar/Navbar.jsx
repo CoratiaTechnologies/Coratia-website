@@ -24,6 +24,22 @@ function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <>
+    <style>{`
+      @keyframes dropdown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      .dropdown {
+        animation: dropdown ease 300ms backwards;
+      }
+      
+    `}</style>
       <nav className="md:flex justify-between items-center z-30 fixed w-full h-[68px] bg-black top-0">
         <div className="flex justify-between items-center">
           <a href="/">
@@ -67,14 +83,14 @@ function Navbar() {
                   </button>
 
                   {dropdownVisible && (
-                    <div className="md:absolute sm:block mt-2 bg-black p-2 shadow-md">
+                    <div className="dropdown md:absolute sm:block mt-2 bg-black p-2 shadow-md">
                       {navComponent.list.map((product) => (
                         <Link
                           onClick={() => {
                             if (navbar) setNavbar((navbar) => !navbar);
                           }}
                           href={`/product/${product.id}`}
-                          className="block px-4 py-2 text-white hover:text-cyan-600"
+                          className="block px-4 py-2 text-white hover:text-cyan-600 transition"
                         >
                           {product.title}
                         </Link>
