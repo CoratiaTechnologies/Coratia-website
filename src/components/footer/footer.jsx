@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const logos = {
-  twitter: "https://coratia.com/assets/image/social/twitter.svg",
-  insta: "https://coratia.com/assets/image/social/insta.svg",
-  youtube: "https://coratia.com/assets/image/social/youtube.svg",
-  linkedin: "https://coratia.com/assets/image/social/linkedin.svg",
+  twitter: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/kfe6h6qn9qnbzd0os3wq",
+  insta: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/z4rfmtietyr4nloohdf7",
+  youtube: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/vg7th3moh4iyemciitkh",
+  linkedin: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/elnncesqx6o7f2ev2hoe",
 }
 
 export default function Footer() {
