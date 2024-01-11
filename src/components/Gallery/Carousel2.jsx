@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import Image from 'next/image';
-import './carouselstyles.css';
+import React, { useState } from "react";
+import Slider from "react-slick";
+import Image from "next/image";
+import "./carouselstyles.css";
 
 function CustomPrevArrow({ onClick }) {
   return (
@@ -10,10 +10,10 @@ function CustomPrevArrow({ onClick }) {
       className="arrow custom-prev-arrow"
       onClick={onClick}
       onKeyDown={onClick}
-      role='button'
+      role="button"
       tabIndex={0}
     >
-      <span className='material-symbols-outlined'>&#8249;</span>
+      <span className="material-symbols-outlined">&#8249;</span>
     </div>
   );
 }
@@ -24,22 +24,22 @@ function CustomNextArrow({ onClick }) {
       className="arrow custom-next-arrow"
       onClick={onClick}
       onKeyDown={onClick}
-      role='button'
+      role="button"
       tabIndex={0}
     >
-      <span className='material-symbols-outlined'>&#8250;</span>
+      <span className="material-symbols-outlined">&#8250;</span>
     </div>
   );
 }
 
-function Carousel2({carouselImages}) {
+function Carousel2({ carouselImages }) {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
     infinite: true,
     speed: 1200,
     centerMode: true,
-    centerPadding: '0px',
+    centerPadding: "0px",
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -54,7 +54,6 @@ function Carousel2({carouselImages}) {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          
         },
       },
     ],
@@ -76,8 +75,18 @@ function Carousel2({carouselImages}) {
           responsive={settings.responsive}
         >
           {carouselImages.map((imgUrl, index) => (
-            <div className={index === slideIndex ? 'slide slide-active' : 'slide'} key={imgUrl}>
-              <Image className='carousel-img object-cover' src={imgUrl} width={580} height={435} alt={`Alt ${index}`} />
+            <div
+              className={index === slideIndex ? "slide slide-active" : "slide"}
+              key={imgUrl}
+            >
+              <Image
+                className="carousel-img object-cover"
+                src={imgUrl}
+                loading="eager"
+                width={580}
+                height={435}
+                alt={`Alt ${index}`}
+              />
             </div>
           ))}
         </Slider>

@@ -96,6 +96,7 @@ export default function Footer() {
                     href={socials.twitter}
                   >
                     <Image
+                      loading="eager"
                       width={32}
                       height={32}
                       alt="twitter"
@@ -112,6 +113,7 @@ export default function Footer() {
                     href={socials.instagram}
                   >
                     <Image
+                      loading="eager"
                       width={32}
                       height={32}
                       alt="insta"
@@ -128,6 +130,7 @@ export default function Footer() {
                     href={socials.youtube}
                   >
                     <Image
+                      loading="eager"
                       width={32}
                       height={32}
                       alt="youtube"
@@ -144,6 +147,7 @@ export default function Footer() {
                     href={socials.linkedin}
                   >
                     <Image
+                      loading="eager"
                       width={32}
                       height={32}
                       alt="linkedin"
@@ -164,6 +168,7 @@ export default function Footer() {
           <div className="flex justify-center">
             <a href={socials.twitter} target={"_blank"}>
               <Image
+                loading="eager"
                 width={32}
                 height={32}
                 alt="twitter"
@@ -173,6 +178,7 @@ export default function Footer() {
             </a>
             <a href={socials.instagram} target={"_blank"}>
               <Image
+                loading="eager"
                 width={32}
                 height={32}
                 alt="instagram"
@@ -182,6 +188,7 @@ export default function Footer() {
             </a>
             <a href={socials.youtube} target={"_blank"}>
               <Image
+                loading="eager"
                 width={32}
                 height={32}
                 alt="youtube"
@@ -191,6 +198,7 @@ export default function Footer() {
             </a>
             <a href={socials.linkedin} target={"_blank"}>
               <Image
+                loading="eager"
                 width={32}
                 height={32}
                 alt="linkedin"

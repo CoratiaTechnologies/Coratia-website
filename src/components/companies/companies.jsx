@@ -43,18 +43,25 @@ const Companies = () => {
 
   return (
     <>
-    <div className="bg-white pt-10 pb-5">
-      <Heading className="text-center">Our Clients</Heading>
-    </div>
-    <div className="bg-slate-100 w-full overflow-hidden pt-5 px-5 md:px-10">
-      <Slider {...settings}>
-        {logos.map((logo, index) => (
-          <div key={index} className="container flex">
-            <Image src={logo} alt="logo" width={150} height={80} className="h-12 sm:h-20 m-auto" />
-          </div>
-        ))}
-      </Slider>
-    </div>
+      <div className="bg-white pt-10 pb-5">
+        <Heading className="text-center">Our Clients</Heading>
+      </div>
+      <div className="bg-slate-100 w-full overflow-hidden pt-5 px-5 md:px-10">
+        <Slider {...settings}>
+          {logos.map((logo, index) => (
+            <div key={index} className="container flex">
+              <Image
+                src={logo}
+                alt="logo"
+                width={150}
+                height={80}
+                loading="eager"
+                className="h-12 sm:h-20 m-auto"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };
