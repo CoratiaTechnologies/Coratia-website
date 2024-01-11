@@ -11,7 +11,7 @@ export function HeroText() {
       <h1
         style={{
           fontSize: "6.8vw",
-          lineHeight: "19vw",
+          lineHeight: "35vh",
           mixBlendMode: "multiply",
         }}
         className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
