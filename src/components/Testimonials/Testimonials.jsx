@@ -84,10 +84,10 @@ export default function Testimonials() {
   return (
     <>
       <div className="bg-white flex items-center justify-center">
-        <Heading className="mt-10 mb-10">TESTIMONIALS</Heading>
+        <Heading className="mt-10 mb-5">TESTIMONIALS</Heading>
       </div>
 
-      <div className="carouselContainer2 md:pl-10 md:pr-14">
+      <div className="carouselContainer2 bg-slate-100 py-4 md:pl-10 md:pr-14">
         <div className="slider2">
           <Slider
             centerMode={settings.centerMode}
@@ -108,17 +108,17 @@ export default function Testimonials() {
                 } flex items-center justify-between`}
                 key={index}
               >
-                <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 space-x-0 md:space-x-6">
-                  <div className="flex flex-col items-center">
-                    <img
-                      src={testimonial.picture}
-                      alt={testimonial.name}
-                      width={200}
-                      height={200}
-                      className="rounded-lg border-4 object-cover"
-                    />
-                    <p className="mt-4 text-lg text-gray-700 font-semibold">
-                      {testimonial.name}
+                <div className="">
+                  <div className="relative h-max w-full md:w-3/4 mx-auto">
+                    <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-10 h-10 transform rotate-180" />
+                    <p className="text-base sm:text-lg italic px-10 sm:px-12 py-8 sm:py-6 text-black">
+                      {testimonial.text}
+                    </p>
+                    <QuoteIcon className="absolute bottom-1 right-1 text-gray-400 w-10 h-10" />
+                  </div>
+                  <div className="w-3/4 md:w-1/2 ml-auto">
+                    <p className="mt-4 text-lg text-gray-700 text-center font-semibold">
+                      -{testimonial.name}
                     </p>
                     <p className="text-sm px-1 text-gray-600 text-center">
                       {testimonial.designation}
@@ -126,13 +126,7 @@ export default function Testimonials() {
                       {testimonial.organisation}
                     </p>
                   </div>
-                  <div className="relative h-max w-full lg:max-w-lg">
-                    <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-12 h-12 transform rotate-180" />
-                    <p className="text-base sm:text-lg italic px-10 sm:px-16 py-10 sm:py-12 text-black">
-                      {testimonial.text}
-                    </p>
-                    <QuoteIcon className="absolute bottom-4 right-4 text-gray-400 w-12 h-12" />
-                  </div>
+                  
                 </div>
               </div>
             ))}
