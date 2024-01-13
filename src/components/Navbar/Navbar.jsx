@@ -11,8 +11,8 @@ const navComponents = [
     title: "SERVICES",
     id: 2,
     list: [
-      { id: 1, title: "Product 1" },
-      { id: 2, title: "Product 2" },
+      { id: 1, title: "ROV Jaladuta" },
+      { id: 2, title: "ROV Jalasimha" },
     ],
   },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
