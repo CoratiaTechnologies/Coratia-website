@@ -102,7 +102,7 @@ export default function Footer() {
                     target={"_blank"}
                     href={item.link}
                   >
-                    <Image width={32} height={32} alt={item.id} src={item.logo} className="mr-2.5 h-5 w-5"></Image>
+                    <Image width={32} height={32} alt={item.id} src={item.logo} loading="eager" className="mr-2.5 h-5 w-5"></Image>
                     {item.id}
                   </a>
                 </li>
@@ -116,9 +116,10 @@ export default function Footer() {
             SOCIALS
           </h3>
           <div className="flex justify-center">
+
           {socialSection.map(item=>
             <a href={item.link} target={"_blank"}>
-              <Image width={32} height={32} alt={item.id} src={item.logo} className="m-2 h-7 w-7"></Image>
+              <Image width={32} height={32} alt={item.id} src={item.logo} loading="eager" className="m-2 h-7 w-7"></Image>
             </a>
           )}
           </div>

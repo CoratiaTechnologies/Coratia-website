@@ -42,6 +42,7 @@ const Companies = () => {
 
   return (
     <>
+
     <div className="bg-white pt-10 pb-5">
       <Heading className="text-center">Our Clients</Heading>
     </div>
@@ -49,7 +50,7 @@ const Companies = () => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className="container flex">
-            <Image src={logo} alt="logo" width={150} height={80} className="h-14 w-auto sm:h-24 m-auto" />
+            <Image src={logo} alt="logo" width={150} height={80} loading="eager" className="h-14 w-auto sm:h-24 m-auto" />
           </div>
         ))}
       </Slider>

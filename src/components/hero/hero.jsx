@@ -82,6 +82,7 @@ export default function Hero() {
                   alt=""
                   width={28}
                   height={28}
+                  loading="eager"
                   className="mr-2.5 w-[28px] h-[28px]"
                 />
                 Enhance Your Experience

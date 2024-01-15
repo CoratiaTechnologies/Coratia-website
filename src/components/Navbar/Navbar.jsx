@@ -24,7 +24,7 @@ function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <>
-    <style>{`
+      <style>{`
       @keyframes dropdown {
         from {
           opacity: 0;
@@ -48,7 +48,9 @@ function Navbar() {
               alt="coratia"
               height={"300"}
               width={"300"}
+              loading="eager"
               className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
+
             />
           </a>
           <span className="md:hidden relative px-4">
