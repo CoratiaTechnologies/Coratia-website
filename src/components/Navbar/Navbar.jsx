@@ -69,7 +69,7 @@ function Navbar() {
           {navComponents.map((navComponent, index) =>
             index === 1 ? (
               <li key={navComponent.id}>
-                <div className="w-full my-14 md:my-0">
+                <div className="w-full my-14 md:my-0 text-center md:text-left">
                   <button
                     onFocus={() => {
                       setDropdownVisible(true);

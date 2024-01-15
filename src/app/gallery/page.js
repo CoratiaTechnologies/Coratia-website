@@ -3,6 +3,7 @@ import React from "react";
 import Carousel2 from "../../components/Gallery/Carousel2";
 import { gallerycontent } from "../../../config/content/Gallery";
 import { Heading } from "../../components/Typography";
+import "./gallery.css";
 
 export default function Gallery() {
   return (

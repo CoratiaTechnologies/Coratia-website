@@ -22,7 +22,7 @@ function productPage() {
           className="w-[500px] h-[300px] mx-auto md:mx-0 rounded-lg object-cover"
         />
         <h2 className="text-center sm:text-4xl text-3xl font-semibold mt-3 md:mt-0 md:ml-10 md:w-[30%]">
-          BEING INSPIRED FROM NATURE WE CREATED {product.name}
+          {product.motto} <br /> {product.name}
         </h2>
       </div>
       <div className="pb-5 text-center bg-slate-800">
