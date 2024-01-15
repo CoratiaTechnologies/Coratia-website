@@ -16,7 +16,7 @@ const navComponents = [
     ],
   },
   { title: "GALLERY", id: 3, scroll: "/gallery" },
-  { title: "BOOK NOW", id: 4, scroll: "/#contact" },
+  { title: "CONTACT US", id: 4, scroll: "/#contact" },
 ];
 
 function Navbar() {
@@ -46,10 +46,11 @@ function Navbar() {
             <Image
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               alt="coratia"
-              height={"200"}
-              width={"230"}
+              height={"300"}
+              width={"300"}
               loading="eager"
-              className="cursor-pointer ml-4 sm:ml-12 md:mt-0 mt-3"
+              className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
+
             />
           </a>
           <span className="md:hidden relative px-4">

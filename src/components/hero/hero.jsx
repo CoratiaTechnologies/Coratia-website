@@ -5,6 +5,8 @@ import HashLoader from "react-spinners/HashLoader";
 import Image from "next/image";
 import "./Hero.css";
 
+const herovideo = "https://res.cloudinary.com/dq9gdlbls/video/upload/f_auto:video,q_auto/herovid_bkrsqb";
+
 export function HeroText() {
   return (
     <div className="relative">
@@ -46,13 +48,16 @@ export default function Hero() {
   return (
     <>
       <div className="hero-section w-full max-w-full overflow-hidden">
-        <img
-          src={herocontent.video}
-          alt=""
+        <video 
           width={1080}
           height={720}
+          autoPlay
+          muted
+          loop
           className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
-        />
+        >
+          <source src={herovideo} type="video/webm" />
+        </video>
 
         <div className="hero-child absolute w-full top-[220px] sm:top-[240px] z-0">
           <div className="hero-wrapper relative w-[700px] mx-auto">
@@ -89,3 +94,12 @@ export default function Hero() {
     </>
   );
 }
+
+/*<img
+          src={herocontent.video}
+          alt=""
+          width={1080}
+          height={720}
+          className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
+        />
+*/
