@@ -31,7 +31,7 @@ export const achievementcontent = [
     id: 5,
     text: "Most promising startup, 2022 by IESA",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_396,h_230,g_auto/v1705336275/achieve_liepts.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705341879/ac_hhxhau.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
 ];

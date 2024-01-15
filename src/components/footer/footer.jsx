@@ -27,7 +27,7 @@ const socialSection = [
   {
     id: "Twitter",
     link: socials.twitter,
-    logo: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/kfe6h6qn9qnbzd0os3wq",
+    logo: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705342346/x-social-media_y68x4g.webp",
   },
   {
     id: "Instagram",
