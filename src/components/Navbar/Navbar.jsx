@@ -8,7 +8,7 @@ import Hamburger from "hamburger-react";
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
   {
-    title: "SERVICES",
+    title: "Products",
     id: 2,
     list: [
       { id: 1, title: "Product 1" },

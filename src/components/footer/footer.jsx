@@ -11,7 +11,7 @@ const companySection = [
   },
   {
     id: "Blog",
-    link: "",
+    link: "#",
   },
   {
     id: "Gallery",
@@ -19,7 +19,7 @@ const companySection = [
   },
   {
     id: "Career",
-    link: "",
+    link: "#",
   }
 ];
 
@@ -31,7 +31,7 @@ const socialSection = [
   },
   {
     id: "Instagram",
-    link: socials.insta,
+    link: socials.instagram,
     logo: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/z4rfmtietyr4nloohdf7",
   },
   {
@@ -51,13 +51,13 @@ export default function Footer() {
     <footer className="bg-[rgb(28,27,27)] text-white w-full">
       <div className="pb-3 pt-1 px-4 sm:px-6 lg:px-8">
         <div className="mt-2 md:mt-6 mx-4 grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-20 ">
-          <div className="flex flex-col items-center md:items-start">
-            <img
+          <div className="hidden md:flex flex-col items-center md:items-start">
+            <Image
               alt="Company Logo"
               className="h-10 object-cover"
-              height="200"
+              height={200}
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
-              width="280"
+              width={280}
             />
             <p className="mt-4 px-5 md:px-0 md:pr-6 text-sm md:text-left text-center">
               We create possibilities for the connected world. Be Bold.
@@ -76,9 +76,9 @@ export default function Footer() {
               <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
                 COMPANY
               </h3>
-              <ul className="mt-1 space-y-0.5 md:space-y-1 text-center md:text-left text-white">
+              <ul className="mt-1 grid grid-cols-2 md:block md:space-y-1 text-center md:text-left text-white">
               {companySection.map(item=>
-                <li>
+                <li className="mx-3 md:mx-0">
                   <Link
                     className="text-sm hover:text-gray-400 transition"
                     href={item.link}

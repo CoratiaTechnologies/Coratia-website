@@ -84,7 +84,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="bg-white flex items-center justify-center">
-        <Heading className="mt-10 mb-5">TESTIMONIALS</Heading>
+        <Heading className="mt-28 mb-5">Testimonials</Heading>
       </div>
 
       <div className="carouselContainer2 bg-slate-100 py-4 md:pl-10 md:pr-14">
