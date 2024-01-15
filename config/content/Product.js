@@ -16,15 +16,24 @@ export const productcontent = [
       
       Depth Capability: Operates seamlessly at depths of up to 150 meters, making it suitable for a wide range of underwater applications.`,
     gallery: [
-      { id: 0, value: "https://wallpaperaccess.com/full/2637581.jpg" },
-      { id: 1, value: "https://source.unsplash.com/user/c_v_r/1900x800" },
+      {
+        id: 0,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480,g_auto/v1705333021/jaladutta3_jxcnyq.jpg",
+      },
+      {
+        id: 1,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480,g_auto/v1704989555/Jaladutta_jzwgus.jpg",
+      },
       { id: 2, value: "https://source.unsplash.com/user/c_v_r/100x100" },
     ],
   },
   {
     id: 2,
     name: "ROV Jalasimha",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_500,h_300,g_auto/v1705330946/jalasimha_oxqldi.jpg",
     description: `Building upon the success of its predecessor, ROV Jalasimha represents the next generation of underwater technology. With enhanced compact design, advanced features, and an increased depth capability of 300 meters, Jalasimha sets new standards for underwater inspection and maintenance.
 
     Key Features:
@@ -39,9 +48,21 @@ export const productcontent = [
     
     Depth Capability: With an increased depth capability of 300 meters, Jalasimha excels in deep-sea inspections and maintenance, catering to a wide range of industries with submerged infrastructure.`,
     gallery: [
-      { id: 0, value: "https://wallpaperaccess.com/full/2637581.jpg" },
-      { id: 1, value: "https://source.unsplash.com/user/c_v_r/1900x800" },
-      { id: 2, value: "https://source.unsplash.com/user/c_v_r/100x100" },
+      {
+        id: 0,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480/v1705331097/simha_xqgqvr.jpg",
+      },
+      {
+        id: 1,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480/v1705331097/si_xocsiq.jpg",
+      },
+      {
+        id: 2,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480/v1705331095/jala_bd8mzj.jpg",
+      },
     ],
   },
 ];

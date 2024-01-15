@@ -60,7 +60,7 @@ export default function Footer() {
               width={280}
             />
             <p className="mt-4 px-5 md:px-0 md:pr-6 text-sm md:text-left text-center">
-              We create possibilities for the connected world. Be Bold.
+              We create possibilities for the connected world.
             </p>
           </div>
 

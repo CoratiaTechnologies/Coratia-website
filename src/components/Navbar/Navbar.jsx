@@ -50,6 +50,7 @@ function Navbar() {
               width={"300"}
               loading="eager"
               className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
+              style={{ filter: "contrast(1.5)" }}
             />
           </a>
           <span className="md:hidden relative px-4">
