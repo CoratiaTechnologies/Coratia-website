@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
@@ -58,7 +57,7 @@ export const metadata = {
         height: 600,
       },
     ],
-    site_name: "Vriddhi 2023",
+    site_name: "Coratia Technologies Ltd.",
   },
   twitter: {
     card: "summary_large_image",
