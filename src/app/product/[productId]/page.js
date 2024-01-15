@@ -27,9 +27,14 @@ function productPage() {
       </div>
       <div className="pb-5 text-center bg-slate-800">
         <h1 className="text-white text-5xl py-5 font-bold">{product.name}</h1>
-        <p className="text-white pt-3 px-4 md:px-28 sm:px-14 md:text-lg text-base">
-          {product.description}
-        </p>
+        <div className="text-white pt-3 px-4 md:px-28 sm:px-14 md:text-lg text-base">
+          {product.description.split("\n").map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </div>
         <ImageSlider gallery={product.gallery} />
       </div>
     </>

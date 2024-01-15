@@ -8,7 +8,7 @@ import Hamburger from "hamburger-react";
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
   {
-    title: "Products",
+    title: "PRODUCTS",
     id: 2,
     list: [
       { id: 1, title: "ROV Jaladuta" },
@@ -50,7 +50,6 @@ function Navbar() {
               width={"300"}
               loading="eager"
               className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
-
             />
           </a>
           <span className="md:hidden relative px-4">
@@ -77,7 +76,7 @@ function Navbar() {
                     onBlur={() => {
                       setTimeout(() => {
                         setDropdownVisible(false);
-                      }, 200);
+                      }, 500);
                     }}
                     className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none"
                   >
