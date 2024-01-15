@@ -27,4 +27,11 @@ export const achievementcontent = [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300418/achievement_4_oaxqeg.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
+  {
+    id: 5,
+    text: "Appreciated by Hon'ble Rakshya Mantri Shri Rajnath Singh Ji",
+    picture:
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300418/achievement_4_oaxqeg.jpg",
+    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+  },
 ];

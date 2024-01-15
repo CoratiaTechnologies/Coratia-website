@@ -8,7 +8,7 @@ import Hamburger from "hamburger-react";
 const navComponents = [
   { title: "HOME", id: 1, scroll: "/" },
   {
-    title: "SERVICES",
+    title: "Products",
     id: 2,
     list: [
       { id: 1, title: "ROV Jaladuta" },
@@ -69,7 +69,7 @@ function Navbar() {
           {navComponents.map((navComponent, index) =>
             index === 1 ? (
               <li key={navComponent.id}>
-                <div className="w-full my-14 md:my-0 text-center">
+                <div className="w-full my-14 md:my-0">
                   <button
                     onFocus={() => {
                       setDropdownVisible(true);
@@ -79,7 +79,7 @@ function Navbar() {
                         setDropdownVisible(false);
                       }, 200);
                     }}
-                    className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 focus:outline-none"
+                    className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none"
                   >
                     {navComponent.title}
                   </button>
@@ -109,7 +109,7 @@ function Navbar() {
                       if (navbar) setNavbar((navbar) => !navbar);
                     }}
                     href={navComponent.scroll}
-                    className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black"
+                    className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black transition"
                   >
                     {navComponent.title}
                   </a>

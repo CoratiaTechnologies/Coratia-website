@@ -84,7 +84,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="bg-white flex items-center justify-center">
-        <Heading className="mt-10 mb-5">TESTIMONIALS</Heading>
+        <Heading className="mt-28 mb-5">Testimonials</Heading>
       </div>
 
       <div className="carouselContainer2 bg-slate-100 py-4 md:pl-10 md:pr-14">
@@ -116,11 +116,11 @@ export default function Testimonials() {
                     </p>
                     <QuoteIcon className="absolute bottom-1 right-1 text-gray-400 w-10 h-10" />
                   </div>
-                  <div className="w-3/4 md:w-1/2 ml-auto">
-                    <p className="mt-4 text-lg text-gray-700 text-center font-semibold">
+                  <div className="w-3/4 md:w-1/2 ml-auto text-right">
+                    <p className="mt-4 text-lg text-gray-700 font-semibold">
                       -{testimonial.name}
                     </p>
-                    <p className="text-sm px-1 text-gray-600 text-center">
+                    <p className="text-sm px-1 text-gray-600">
                       {testimonial.designation}
                       <br />
                       {testimonial.organisation}
