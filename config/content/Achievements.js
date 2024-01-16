@@ -10,7 +10,7 @@ export const achievementcontent = [
     id: 2,
     text: "Winner of Maharastra Startup Week 2022",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300230/achievement_2_fmzjxp.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
