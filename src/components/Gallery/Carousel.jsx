@@ -32,7 +32,7 @@ function CustomNextArrow({ onClick }) {
   );
 }
 
-function Carousel2({ carouselImages }) {
+function Carousel({ carouselImages }) {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
@@ -95,4 +95,4 @@ function Carousel2({ carouselImages }) {
   );
 }
 
-export default Carousel2;
+export default Carousel;
