@@ -27,11 +27,11 @@ export default function AboutUs() {
             title="Why do you need us ?"
             poster="maxresdefault"
             webp
+            wrapperClass="yt-lite rounded"
             style={{
               aspectRatio: "900/500",
               objectFit: "cover",
               height: "500",
-              borderRadius: "5px",
             }}
           />
         </div>
