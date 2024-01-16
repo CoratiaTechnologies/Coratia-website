@@ -7,101 +7,84 @@ const services = [
     {
         id: 1,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 1",
+        name: "UNMANNED SURVEILLANCE",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Ocean topography monitoring",
+            "Submerged pipeline survey",
+            "Subsea cable inspection",
         ],
     },
     {
         id: 2,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "SEARCH & RESCUE",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Identification of desired targets",
+            "Relocation of subjects of interest",
         ],
     },
     {
-        id: 2,
+        id: 3,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "ROBOTIC CLEANING",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Remote ship hull cleaning",
+            "Marine growth removal",
         ],
     },
     {
-        id: 2,
+        id: 4,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "AI BASED NDT INSPECTION",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Realtime defect identification",
+            "Image and video enhancement",
+            "Defect quantification",
         ],
     },
     {
-        id: 2,
+        id: 5,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "FOR SHIPS & PORTS",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Sonar survey",
+            "Bathymetry & hydrography survey",
+            "Computational fluid dynamics",
+            "Visual inspection of ship hulls, propellers and steel structures",
         ],
     },
     {
-        id: 2,
+        id: 6,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "FOR BRIDGES",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Real time visual inspection",
+            "Structural NDT",
+            "Scouring analysis",
+            "Predictive Study",
+            "Comparison assessment",
         ],
     },
     {
-        id: 2,
+        id: 7,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "FOR DAMS",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Visual inspection of sluice gates, concrete & steel structures",
+            "Structural NDT",
+            "Bathymetry & hydrography survey",
+            "Predictive analysis",
         ],
     },
     {
-        id: 2,
+        id: 8,
         image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
+        name: "FOR PIPELINE & INDUSTRIES",
         text: [
-            "text 1",
-            "text 2",
-            "text 3",
-        ],
-    },
-    {
-        id: 2,
-        image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
-        text: [
-            "text 1",
-            "text 2",
-            "text 3",
-        ],
-    },
-    {
-        id: 2,
-        image: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
-        name: "Service 2",
-        text: [
-            "text 1",
-            "text 2",
-            "text 3",
+            "Visual inspection of pipelines & tanks",
+            "Defect identification",
+            "Corrosion monitoring",
+            "Health assessment",
         ],
     },
 ];
@@ -113,15 +96,15 @@ export default function Services(){
         <Heading className="mt-14 bg-white text-center">
             Solutions We Offer
         </Heading>
-        <div className=" bg-yellow-100 flex flex-wrap gap-x-3 pb-7 px-5 md:px-10">
+        <div className=" bg-yellow-100 flex flex-wrap gap-x-3 pt-4 pb-7 px-5 md:px-10">
             {services.map((item) => (
-            <div className="w-[270px] h-[300px] text-black mx-auto mt-6 overflow-hidden">
+            <div className="w-[300px] h-[320px] text-black mx-auto mt-2 overflow-hidden">
                 <Image
-                 width={270}
+                 width={300}
                  height={180}
                  src={item.image}
                  alt=''
-                 className="object-cover w-[270px] h-[180px] rounded-sm"
+                 className="object-cover w-[300px] h-[180px] rounded-lg"
                 />
 
                 <h1 className="text-center text-lg font-semibold">{item.name}</h1>
