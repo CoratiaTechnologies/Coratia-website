@@ -27,6 +27,11 @@ export const productcontent = [
         value:
           "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480,g_auto/v1704989555/Jaladutta_jzwgus.jpg",
       },
+      {
+        id: 2,
+        value:
+          "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_800,h_480,g_auto/v1705412669/jalad_dpyvoj.jpg",
+      },
     ],
   },
   {

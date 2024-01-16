@@ -34,4 +34,11 @@ export const achievementcontent = [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705341879/ac_hhxhau.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
+  {
+    id: 6,
+    text: "Aaraon Capital chairman David Wolfe",
+    picture:
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705412863/IMG-20221202-WA0041_k5pb8r.jpg",
+    desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+  },
 ];
