@@ -50,7 +50,7 @@ function Navbar() {
               width={"300"}
               loading="eager"
               className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
-
+              style={{ filter: "contrast(1.5)" }}
             />
           </a>
           <span className="md:hidden relative px-4">
@@ -69,7 +69,7 @@ function Navbar() {
           {navComponents.map((navComponent, index) =>
             index === 1 ? (
               <li key={navComponent.id}>
-                <div className="w-full my-14 md:my-0">
+                <div className="w-full my-14 md:my-0 text-center md:text-left">
                   <button
                     onFocus={() => {
                       setDropdownVisible(true);
@@ -77,7 +77,7 @@ function Navbar() {
                     onBlur={() => {
                       setTimeout(() => {
                         setDropdownVisible(false);
-                      }, 200);
+                      }, 500);
                     }}
                     className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none"
                   >

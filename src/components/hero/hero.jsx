@@ -5,7 +5,8 @@ import HashLoader from "react-spinners/HashLoader";
 import Image from "next/image";
 import "./Hero.css";
 
-const herovideo = "https://res.cloudinary.com/dq9gdlbls/video/upload/f_auto:video,q_auto/herovid_bkrsqb";
+const herovideo =
+  "https://res.cloudinary.com/dq9gdlbls/video/upload/f_auto:video,q_auto/herovid_bkrsqb";
 
 export function HeroText() {
   return (
@@ -13,10 +14,10 @@ export function HeroText() {
       <h1
         style={{
           fontSize: "6.8vw",
-          lineHeight: "35vh",
+          lineHeight: "25vh",
           mixBlendMode: "multiply",
         }}
-        className="  bg-black text-white md:mt-10 w-[100%] text-center font-extrabold"
+        className="  bg-black text-white md:mt-32 w-[100%] text-center font-extrabold"
       >
         {herocontent.text}
       </h1>
@@ -48,13 +49,13 @@ export default function Hero() {
   return (
     <>
       <div className="hero-section w-full max-w-full overflow-hidden">
-        <video 
+        <video
           width={1080}
           height={720}
           autoPlay
           muted
           loop
-          className="hero-image fixed object-cover w-full max-w-full h-[550px] -z-20 overflow-hidden"
+          className="hero-image fixed object-cover w-full max-w-full h-[630px] mt-[60px] -z-20 overflow-hidden"
         >
           <source src={herovideo} type="video/webm" />
         </video>

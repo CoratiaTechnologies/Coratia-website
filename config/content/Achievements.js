@@ -29,9 +29,9 @@ export const achievementcontent = [
   },
   {
     id: 5,
-    text: "Appreciated by Hon'ble Rakshya Mantri Shri Rajnath Singh Ji",
+    text: "Most promising startup, 2022 by IESA",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300418/achievement_4_oaxqeg.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705341879/ac_hhxhau.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
 ];

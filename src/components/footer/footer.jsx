@@ -20,14 +20,14 @@ const companySection = [
   {
     id: "Career",
     link: "#",
-  }
+  },
 ];
 
 const socialSection = [
   {
     id: "Twitter",
     link: socials.twitter,
-    logo: "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/kfe6h6qn9qnbzd0os3wq",
+    logo: "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705342346/x-social-media_y68x4g.webp",
   },
   {
     id: "Instagram",
@@ -60,12 +60,14 @@ export default function Footer() {
               width={280}
             />
             <p className="mt-4 px-5 md:px-0 md:pr-6 text-sm md:text-left text-center">
-              We create possibilities for the connected world. Be Bold.
+              We create possibilities for the connected world.
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">VISIT</h3>
+            <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
+              VISIT
+            </h3>
             <p className="mt-2 text-sm px-5 md:px-0 text-center md:text-left">
               {mapcontent.address}
             </p>
@@ -77,16 +79,16 @@ export default function Footer() {
                 COMPANY
               </h3>
               <ul className="mt-1 grid grid-cols-2 md:block md:space-y-1 text-center md:text-left text-white">
-              {companySection.map(item=>
-                <li className="mx-3 md:mx-0">
-                  <Link
-                    className="text-sm hover:text-gray-400 transition"
-                    href={item.link}
-                  >
-                    {item.id}
-                  </Link>
-                </li>
-              )}
+                {companySection.map((item, index) => (
+                  <li key={index} className="mx-3 md:mx-0">
+                    <Link
+                      className="text-sm hover:text-gray-400 transition"
+                      href={item.link}
+                    >
+                      {item.id}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -95,18 +97,25 @@ export default function Footer() {
                 SOCIAL
               </h3>
               <ul className="mt-2 space-y-0.5 md:space-y-2 text-white">
-              {socialSection.map(item=>
-                <li>
-                  <a
-                    className="flex items-center text-sm hover:opacity-70 transition"
-                    target={"_blank"}
-                    href={item.link}
-                  >
-                    <Image width={32} height={32} alt={item.id} src={item.logo} loading="eager" className="mr-2.5 h-5 w-5"></Image>
-                    {item.id}
-                  </a>
-                </li>
-              )}
+                {socialSection.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      className="flex items-center text-sm hover:opacity-70 transition"
+                      target={"_blank"}
+                      href={item.link}
+                    >
+                      <Image
+                        width={32}
+                        height={32}
+                        alt={item.id}
+                        src={item.logo}
+                        loading="eager"
+                        className="mr-2.5 h-5 w-5"
+                      ></Image>
+                      {item.id}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -116,12 +125,18 @@ export default function Footer() {
             SOCIALS
           </h3>
           <div className="flex justify-center">
-
-          {socialSection.map(item=>
-            <a href={item.link} target={"_blank"}>
-              <Image width={32} height={32} alt={item.id} src={item.logo} loading="eager" className="m-2 h-7 w-7"></Image>
-            </a>
-          )}
+            {socialSection.map((item, index) => (
+              <a key={index} href={item.link} target={"_blank"}>
+                <Image
+                  width={32}
+                  height={32}
+                  alt={item.id}
+                  src={item.logo}
+                  loading="eager"
+                  className="m-2 h-7 w-7"
+                ></Image>
+              </a>
+            ))}
           </div>
         </div>
 
