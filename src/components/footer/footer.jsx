@@ -147,14 +147,14 @@ export default function Footer() {
           <div className="mt-4 md:mt-0 flex justify-center md:mr-10 md:space-x-6">
             <a
               className="text-sm hover:text-gray-400 transition px-4"
-              href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+              href="/terms-of-use"
               target={"_blank"}
             >
               Terms of Use
             </a>
             <a
               className="text-sm hover:text-gray-400 transition px-4"
-              href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+              href="/terms-of-use"
               target={"_blank"}
             >
               Privacy Policy

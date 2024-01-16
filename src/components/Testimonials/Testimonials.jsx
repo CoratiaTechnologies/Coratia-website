@@ -111,22 +111,19 @@ export default function Testimonials() {
                 <div className="">
                   <div className="relative w-full md:w-[90%] mx-auto">
                     <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-10 h-10 transform rotate-180" />
-                    <p className="text-base text-center sm:text-lg italic px-10 sm:px-12 py-4 sm:py-6 text-black">
+                    <p className="text-base text-center sm:text-lg italic px-10 sm:px-12 py-4 sm:py-6 text-black font-bold">
                       {testimonial.text}
                     </p>
                     <QuoteIcon className="absolute bottom-1 right-1 text-gray-400 w-10 h-10" />
                   </div>
-                  <div className="w-3/4 md:w-1/2 ml-auto mr-4 text-right">
-                    <p className="mt-4 text-lg text-gray-700 font-semibold">
-                      -{testimonial.name}
-                    </p>
+                  <div className="w-3/4 md:w-1/2 ml-auto mr-24 text-right">
+                    <p className="mt-4 text-gray-700">-{testimonial.name}</p>
                     <p className="text-sm px-1 text-gray-600">
                       {testimonial.designation}
                       <br />
                       {testimonial.organisation}
                     </p>
                   </div>
-                  
                 </div>
               </div>
             ))}

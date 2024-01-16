@@ -75,17 +75,17 @@ function Navbar() {
         >
           {navComponents.map((navComponent, index) =>
             index === 1 ? (
-              <li key={navComponent.id}>
+              <li
+                key={navComponent.id}
+                onMouseOver={() => {
+                  setDropdownVisible(true);
+                }}
+                onMouseOut={() => {
+                  setDropdownVisible(false);
+                }}
+              >
                 <div className="w-full my-14 md:my-0 text-center md:text-left">
                   <button
-                    onFocus={() => {
-                      setDropdownVisible(true);
-                    }}
-                    onBlur={() => {
-                      setTimeout(() => {
-                        setDropdownVisible(false);
-                      }, 500);
-                    }}
                     className={`text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none ${
                       activeLink === navComponent.scroll
                         ? "border-b-2 border-cyan-600"
@@ -97,7 +97,7 @@ function Navbar() {
                   </button>
 
                   {dropdownVisible && (
-                    <div className="dropdown md:absolute sm:block mt-2 bg-black p-2 shadow-md">
+                    <div className="dropdown md:absolute sm:block bg-black p-2 shadow-md">
                       {navComponent.list.map((product) => (
                         <Link
                           onClick={() => {
