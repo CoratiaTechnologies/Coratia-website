@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://coratia.com"),
   title: "Coratia Technologies Ltd.",
   description:
     "Coratia Technologies Pvt. Ltd. is a trailblazing company specializing in underwater robotics. We offer comprehensive solutions in the field of Remotely Operated Vehicles (ROVs) and Autonomous Underwater Vehicles (AUVs), catering to a wide range of underwater challenges using cutting-edge technologies.",

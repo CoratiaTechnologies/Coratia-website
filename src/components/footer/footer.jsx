@@ -10,8 +10,8 @@ const companySection = [
     link: "#contact",
   },
   {
-    id: "Blog",
-    link: "#",
+    id: "Products",
+    link: "/product/2",
   },
   {
     id: "Gallery",
@@ -142,13 +142,19 @@ export default function Footer() {
 
         <div className="mt-3 md:mt-4 border-t border-gray-200 pt-3 md:pt-4 md:flex md:items-center justify-between">
           <p className="text-sm text-center px-4">
-            © 2022 Coratia Technologies
+            © 2024 Coratia Technologies
           </p>
           <div className="mt-4 md:mt-0 flex justify-center md:mr-10 md:space-x-6">
-            <a className="text-sm hover:text-gray-400 transition px-4" href="#">
+            <a
+              className="text-sm hover:text-gray-400 transition px-4"
+              href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+            >
               Terms of Use
             </a>
-            <a className="text-sm hover:text-gray-400 transition px-4" href="#">
+            <a
+              className="text-sm hover:text-gray-400 transition px-4"
+              href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+            >
               Privacy Policy
             </a>
           </div>
