@@ -26,10 +26,7 @@ const HeadingMap = styled.div`
 
 export default function Map() {
   return (
-    <div
-      id="contact"
-      className="bg-white text-black px-5 md:px-10 py-5 pt-28 pb-28"
-    >
+    <div id="contact" className="bg-white text-black px-5 md:px-10 pt-28 pb-28">
       <div className="w-[100%] flex flex-wrap">
         <HeadingMap className="text-center w-full md:hidden block pb-4">
           Get in Touch
@@ -42,12 +39,21 @@ export default function Map() {
           className="md:w-[50%] w-[100%] m-auto rounded-md"
         />
 
-        <div className="mt-2 md:mt-auto mx-auto md:pl-20 md:w-[40%] m-auto">
+        <div className="mt-2 md:mt-0 mx-auto md:pl-20 md:w-[40%] m-auto">
           <HeadingMap className="text-5xl hidden md:block font-bold pt-7">
             Get in Touch
           </HeadingMap>
-          <p className="md:mt-5 mt-2 text-base md:text-lg md:w-[80%]">
-            {mapcontent.address}
+          <p className="mt-2 text-base md:text-lg md:w-[80%]">
+            {mapcontent.address.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+            Email:{" "}
+            <a href="mailto:contact@coratia.com" className="underline">
+              contact@coratia.com
+            </a>
           </p>
           <PopupButton
             id="jqHwoipO"

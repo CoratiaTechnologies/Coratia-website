@@ -8,14 +8,14 @@ export const achievementcontent = [
   },
   {
     id: 2,
-    text: "Winner of Maharastra Startup Week 2022",
+    text: "Winner of Maharastra Startup Week, 2022",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
     id: 3,
-    text: "Facilitated by Chief of Naval Staff Admiral R. Hari Kumar 2023",
+    text: "Facilitated by Chief of Naval Staff Admiral R. Hari Kumar, 2023",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
@@ -31,7 +31,7 @@ export const achievementcontent = [
     id: 5,
     text: "Most promising startup, 2022 by IESA",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705341879/ac_hhxhau.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705431827/ash_yknxhj.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
