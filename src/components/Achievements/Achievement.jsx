@@ -28,7 +28,7 @@ export default function Achievements() {
         <Heading className="py-5 md:py-10">Achievements</Heading>
       </div>
       <div className="w-full px-5 bg-white">
-        <div className="grid md:grid-cols-2 2xl:grid-cols-3 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
           {achievementcontent.map((item) => (
             <div
               key={item.id}

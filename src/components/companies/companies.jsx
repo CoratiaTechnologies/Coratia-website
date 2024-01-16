@@ -33,7 +33,7 @@ const Companies = () => {
       <div className="bg-white pt-10 pb-5">
         <Heading className="text-center">Our Clients</Heading>
       </div>
-      <div className="bg-slate-100 w-full overflow-hidden pt-5 px-5 md:px-10">
+      <div className="bg-slate-100 w-full overflow-hidden py-5 px-5 md:px-10">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div key={index} className="container flex">
