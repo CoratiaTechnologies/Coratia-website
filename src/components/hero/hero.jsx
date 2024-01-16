@@ -59,7 +59,7 @@ export default function Hero() {
           <source src={herovideo} type="video/webm" />
         </video>
 
-        <div className="hero-child absolute w-full top-[220px] sm:top-[240px] z-0">
+        <div className="hero-child absolute w-full top-[320px] sm:top-[240px] z-0">
           <div className="hero-wrapper relative w-[700px] mx-auto">
             <p
               className="drop-1 hero-text mx-auto text-center p-3 
@@ -74,7 +74,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center w-[225px] sm:w-[260px] h-[52px] p-3 mx-auto text-center
-               text-white btn text-base sm:mt-7 rounded-full font-semibold bg-slate-900
+                text-white btn text-base mt-4 sm:mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
                 <Image

@@ -15,8 +15,9 @@ const navComponents = [
       { id: 2, title: "ROV Jalasimha" },
     ],
   },
-  { title: "GALLERY", id: 3, scroll: "/gallery" },
-  { title: "CONTACT US", id: 4, scroll: "/#contact" },
+  { title: "SERVICES", id: 3, scroll: "/services" },
+  { title: "GALLERY", id: 4, scroll: "/gallery" },
+  { title: "CONTACT US", id: 5, scroll: "/#contact" },
 ];
 
 function Navbar() {
