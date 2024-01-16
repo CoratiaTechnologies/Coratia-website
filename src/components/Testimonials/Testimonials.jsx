@@ -117,9 +117,7 @@ export default function Testimonials() {
                     <QuoteIcon className="absolute bottom-1 right-1 text-gray-400 w-10 h-10" />
                   </div>
                   <div className="w-3/4 md:w-1/2 ml-auto mr-24 text-right">
-                    <p className="mt-4 text-lg text-gray-700">
-                      -{testimonial.name}
-                    </p>
+                    <p className="mt-4 text-gray-700">-{testimonial.name}</p>
                     <p className="text-sm px-1 text-gray-600">
                       {testimonial.designation}
                       <br />
