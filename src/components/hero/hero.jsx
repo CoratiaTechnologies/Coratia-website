@@ -74,7 +74,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center w-[225px] sm:w-[260px] h-[52px] p-3 mx-auto text-center
-               text-white btn text-base mt-4 sm:mt-7 rounded-full font-semibold bg-slate-900
+                text-white btn text-base mt-4 sm:mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
                 <Image
