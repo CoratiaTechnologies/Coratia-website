@@ -143,7 +143,7 @@ function Navbar() {
                     href={navComponent.scroll}
                     className={`text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 ${
                       activeLink === navComponent.scroll
-                        ? "border-b-2 border-blue-500"
+                        ? "border-b-2 border-cyan-600"
                         : ""
                     }`}
                   >
