@@ -65,7 +65,7 @@ export default function Hero() {
               className="drop-1 hero-text mx-auto text-center p-3 
                 font-bold text-white text-6xl"
             >
-              Revolutionizing Underwater Inspection with Robots
+              Revolutionizing Underwater Inspection using Robots
             </p>
 
             <div className="drop-2">
