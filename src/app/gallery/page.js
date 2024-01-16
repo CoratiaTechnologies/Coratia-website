@@ -7,7 +7,7 @@ import "./gallery.css";
 
 export default function Gallery() {
   return (
-    <div className="pt-14">
+    <div className="pt-14 pb-14">
       {gallerycontent.map((gallery, index) => (
         <div key={index} className="bg-white pt-7 md:pt-7">
           <Heading className="text-center font-semibold pb-3 font-poppins">
