@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Carousel2 from "../../components/Gallery/Carousel2";
+import Carousel from "../../components/Gallery/Carousel";
 import { gallerycontent } from "../../../config/content/Gallery";
 import { Heading } from "../../components/Typography";
 import "./gallery.css";
@@ -13,7 +13,7 @@ export default function Gallery() {
           <Heading className="text-center font-semibold pb-3 font-poppins">
             {gallery.title}
           </Heading>
-          <Carousel2 carouselImages={gallery.images} />
+          <Carousel carouselImages={gallery.images} />
         </div>
       ))}
     </div>

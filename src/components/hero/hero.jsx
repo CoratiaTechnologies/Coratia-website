@@ -14,10 +14,9 @@ export function HeroText() {
       <h1
         style={{
           fontSize: "6.8vw",
-          lineHeight: "25vh",
           mixBlendMode: "multiply",
         }}
-        className="  bg-black text-white md:mt-32 w-[100%] text-center font-extrabold"
+        className="transText bg-black text-white md:mt-24 w-[100%] text-center font-extrabold"
       >
         {herocontent.text}
       </h1>
@@ -74,7 +73,7 @@ export default function Hero() {
                 href={herocontent.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-[225px] sm:w-[260px] h-[52px] p-3 mx-auto text-center
+                className="flex items-center w-[225px] sm:w-[260px] h-[52px] p-3 mx-auto text-center
                text-white btn text-base sm:mt-7 rounded-full font-semibold bg-slate-900
                 transition hover:bg-slate-800"
               >
@@ -84,7 +83,7 @@ export default function Hero() {
                   width={28}
                   height={28}
                   loading="eager"
-                  className="mr-2.5 w-[28px] h-[28px]"
+                  className="mr-2 w-[28px] h-[28px]"
                 />
                 Enhance Your Experience
               </Link>

@@ -1,8 +1,12 @@
 .hero-section {
   background: cover;
   z-index: 0;
-  height: 500px;
-  width: 100vw;
+  height: 540px;
+  width: 100%;
+}
+
+.transText {
+  line-height: 11vw;
 }
 
 @media only screen and (max-width: 720px) {
@@ -25,10 +29,13 @@
   }
   .hero-image {
     width: 100%;
-    height: 500px;
+    height: 480px;
   }
   .btn {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .transText {
+    line-height: 20vw;
   }
 }
 
