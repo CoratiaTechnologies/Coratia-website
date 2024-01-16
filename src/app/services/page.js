@@ -18,6 +18,7 @@ export default function Services() {
               src={item.image}
               alt=""
               className="object-cover w-[300px] h-[180px] rounded-lg"
+              loading="eager"
             />
 
             <h1 className="text-center text-lg font-semibold">{item.name}</h1>

@@ -20,6 +20,7 @@ function page() {
                   width={540}
                   height={280}
                   className="lg:h-[230px] h-[170px] w-full object-cover"
+                  loading="eager"
                 />
               </div>
               <div className="w-full h-[45px] flex items-center justify-center">
