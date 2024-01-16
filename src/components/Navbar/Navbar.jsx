@@ -22,6 +22,12 @@ const navComponents = [
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [activeLink, setActiveLink] = useState("/"); // State to track the active link
+
+  const handleLinkClick = (scroll) => {
+    setActiveLink(scroll);
+    setNavbar(false);
+  };
   return (
     <>
       <style>{`
@@ -79,7 +85,12 @@ function Navbar() {
                         setDropdownVisible(false);
                       }, 500);
                     }}
-                    className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none"
+                    className={`text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 transition focus:outline-none ${
+                      activeLink === navComponent.scroll
+                        ? "border-b-2 border-blue-500"
+                        : ""
+                    }`}
+                    onClick={() => handleLinkClick(navComponent.scroll)}
                   >
                     {navComponent.title}
                   </button>
@@ -90,6 +101,7 @@ function Navbar() {
                         <Link
                           onClick={() => {
                             if (navbar) setNavbar((navbar) => !navbar);
+                            handleLinkClick(navComponent.scroll);
                           }}
                           href={`/product/${product.id}`}
                           className="block px-4 py-2 text-white hover:text-cyan-600 transition"
@@ -107,9 +119,14 @@ function Navbar() {
                   <a
                     onClick={() => {
                       if (navbar) setNavbar((navbar) => !navbar);
+                      handleLinkClick(navComponent.scroll);
                     }}
                     href={navComponent.scroll}
-                    className="text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black transition"
+                    className={`text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black transition ${
+                      activeLink === navComponent.scroll
+                        ? "border-b-2 border-blue-500"
+                        : ""
+                    }`}
                   >
                     {navComponent.title}
                   </a>
@@ -121,9 +138,14 @@ function Navbar() {
                   <Link
                     onClick={() => {
                       if (navbar) setNavbar((navbar) => !navbar);
+                      handleLinkClick(navComponent.scroll);
                     }}
                     href={navComponent.scroll}
-                    className="text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600"
+                    className={`text-white text-sm font-normal md:py-6 md:px-5 font-nidus hover:text-cyan-600 ${
+                      activeLink === navComponent.scroll
+                        ? "border-b-2 border-blue-500"
+                        : ""
+                    }`}
                   >
                     {navComponent.title}
                   </Link>
