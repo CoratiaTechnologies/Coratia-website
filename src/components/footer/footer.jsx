@@ -148,12 +148,14 @@ export default function Footer() {
             <a
               className="text-sm hover:text-gray-400 transition px-4"
               href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+              target={"_blank"}
             >
               Terms of Use
             </a>
             <a
               className="text-sm hover:text-gray-400 transition px-4"
               href="https://www.termsofusegenerator.net/live.php?token=2u21dSUWThRnROfflIiUAdivxTMZDyLd"
+              target={"_blank"}
             >
               Privacy Policy
             </a>
