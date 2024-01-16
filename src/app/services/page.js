@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import "./services.css";
 import { Heading } from "../../components/Typography";
 import Image from "next/image";
 
