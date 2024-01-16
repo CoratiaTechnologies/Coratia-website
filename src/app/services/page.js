@@ -9,11 +9,10 @@ import {services} from "../../../config/content/Services";
 export default function Services(){
     return(
         <>
-        <div className="absolute bg-white top-0 left-0 h-[520px] w-full -z-30"></div>
-        <Heading className="mt-14 bg-white text-center">
+        <Heading className="mt-20 text-center">
             Solutions We Offer
         </Heading>
-        <div className=" bg-yellow-100 flex flex-wrap gap-x-3 pt-4 pb-7 px-5 md:px-10">
+        <div className="flex flex-wrap gap-x-3 pt-4 pb-7 px-5 md:px-10">
             {services.map((item) => (
             <div className="w-[300px] h-[320px] text-black mx-auto mt-2 overflow-hidden">
                 <Image
