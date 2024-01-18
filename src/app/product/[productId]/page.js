@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
-import { usePathname } from "next/navigation";
 import ImageSlider from "./ImageSlider";
 import { productcontent } from "../../../../config/content/Product";
 
 const data = productcontent;
 
-function productPage() {
-  const pathname = usePathname();
-  const productId = pathname.substring(9);
+function productPage({ params }) {
+  const productId = params.productId;
   var product = data.find((item) => item.id.toString() === productId);
 
   return (
@@ -25,7 +23,7 @@ function productPage() {
           {product.motto} <br /> {product.name}
         </h2>
       </div>
-      <div className="pb-5 text-center bg-slate-800">
+      <div className="pb-14 text-center bg-slate-800">
         <h1 className="text-white text-5xl py-5 font-bold">{product.name}</h1>
         <div className="text-white pt-3 px-4 md:px-28 sm:px-14 md:text-lg text-base text-justify">
           {product.description.split("\n").map((line, index) => (

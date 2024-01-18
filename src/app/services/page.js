@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <>
       <Heading className="mt-20 text-center">Solutions We Offer</Heading>
-      <div className="flex flex-wrap gap-x-3 pt-4 pb-7 px-5 md:px-10">
+      <div className="flex flex-wrap gap-x-3 pt-4 pb-16 px-5 md:px-10">
         {services.map((item) => (
           <div className="w-[300px] h-[320px] text-black mx-auto mt-2 overflow-hidden">
             <Image
