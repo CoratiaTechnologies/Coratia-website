@@ -3,22 +3,22 @@ import { Heading } from "./Typography";
 import Image from "next/image";
 
 const featureImage =
-  "https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/Coratia_Brochure-4_kidw6g";
+  "https://res.cloudinary.com/dgjzygzgx/image/upload/c_pad,b_gen_fill,w_1920,h_1080/v1705707451/https___res.cloudinary_nry4ee.jpg";
 
 export default function Features() {
   return (
     <>
-      <div className="text-center pt-32 bg-white">
+      <div className="text-center md:pt-32 pt-16 bg-white">
         <Heading>Product Features</Heading>
       </div>
-      <div className="w-full p-5 bg-white">
+      <div className="w-full bg-white">
         <div className="">
           <Image
             src={featureImage}
             alt=""
             height={1080}
-            width={2140}
-            className="w-auto mx-auto max-h-[72vh] shadow-lg"
+            width={1920}
+            className="shadow-lg"
           />
         </div>
       </div>

@@ -95,8 +95,9 @@ function Navbar() {
 
                   {dropdownVisible && (
                     <div className="dropdown md:absolute sm:block bg-black p-2 shadow-md">
-                      {navComponent.list.map((product) => (
+                      {navComponent.list.map((product, index) => (
                         <Link
+                          key={index}
                           onClick={() => {
                             if (navbar) setNavbar((navbar) => !navbar);
                             handleLinkClick(navComponent.scroll);

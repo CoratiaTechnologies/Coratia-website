@@ -20,7 +20,7 @@ function page() {
           >
             <div
               key={index}
-              className="card lg:w-[270px] cursor-pointer transition"
+              className="card w-[270px] cursor-pointer transition"
             >
               <div className="">
                 <Image

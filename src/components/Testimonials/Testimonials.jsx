@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";
-import Image from "next/image";
 import { Heading } from "../Typography";
 import { testimonials } from "../../../config/content/Testimonial";
 
