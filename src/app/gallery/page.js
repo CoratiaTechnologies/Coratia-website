@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function page() {
   return (
-    <div className="w-full px-5 bg-white mt-[68px] py-14">
+    <div className="w-full px-5 bg-white mt-[68px] pt-14 pb-24">
       <div className="grid md:grid-cols-2 2xl:grid-cols-3 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
         {gallerycontent.map((item, index) => (
           <Link href={`/gallery/${index}`} key={index}>

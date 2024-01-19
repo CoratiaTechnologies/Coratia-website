@@ -3,7 +3,7 @@ import { awards } from "../../../config/content/Awards";
 import Image from "next/image";
 import {Heading} from "../Typography";
 
-const awardImage = 'https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300182/IMG-20231130-WA0025_sqmkss.jpg';
+const awardImage = 'https://res.cloudinary.com/dq9gdlbls/image/upload/f_auto,q_auto/wqxnvms0gwbuyfxao7x6';
 
 export default function Awards(){
     return(

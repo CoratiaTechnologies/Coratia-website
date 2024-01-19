@@ -22,6 +22,7 @@ export default function AboutUs() {
             }}
             width="913"
           /> */}
+          <div className="rounded-xl overflow-hidden">
           <LiteYouTubeEmbed
             id="e1lyC_ipKfQ"
             title="Why do you need us ?"
@@ -34,10 +35,11 @@ export default function AboutUs() {
               height: "500",
             }}
           />
+          </div>
         </div>
         <div className="w-full md:w-1/2 p-6 md:p-12">
           <Heading className="text-xl hidden md:block mb-6">About Us</Heading>
-          <p className="text-base md:text-lg">{aboutcontent.content}</p>
+          <p className="text-base md:text-lg text-justify">{aboutcontent.content}</p>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 export const achievementcontent = [
   {
     id: 1,
-    text: "Hon'ble Union Minister Shri Dharmendra Pradhan Ji visited our office.",
+    text: "Hon'ble Union Minister Shri Dharmendra Pradhan Ji reviewing our product.",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300182/IMG-20231130-WA0025_sqmkss.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
@@ -15,7 +15,7 @@ export const achievementcontent = [
   },
   {
     id: 3,
-    text: "Facilitated by Chief of Naval Staff Admiral R. Hari Kumar, 2023",
+    text: "Felicitated by Chief of Naval Staff Admiral R. Hari Kumar, 2023",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
