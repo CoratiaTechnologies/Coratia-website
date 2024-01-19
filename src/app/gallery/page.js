@@ -13,19 +13,19 @@ function page() {
       <Heading className="text-center pb-5">Gallery</Heading>
       <div className="grid md:grid-cols-4 2xl:grid-cols-4 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
         {gallerycontent.map((item, index) => (
-          <Link href={`/gallery/${index}`} key={index}>
+          <Link href={`/gallery/${index}`} key={index} className="rounded-xl overflow-hidden hover:scale-105 border-2 shadow-xl transition">
             <div
               key={index}
-              className="card border-2 shadow-xl lg:w-[250px] w-[300px] cursor-pointer hover:scale-110 transition rounded"
+              className="card lg:w-[250px] w-[300px] cursor-pointer transition"
             >
-              <div className="rounded">
+              <div className="">
                 <Image
                   src={item.images[0]}
                   alt=""
                   width={540}
                   height={280}
                   className="lg:h-[230px] h-[170px] w-full object-cover"
-                  loading="eager"
+                  loading="lazy"
                 />
               </div>
               <div className="w-full h-[45px] flex items-center justify-center">
@@ -33,7 +33,7 @@ function page() {
                   {item.title}
                 </p>
               </div>
-              <div className="w-full h-[162px] flex items-center justify-center">
+              <div className="w-full h-[152px] flex items-center justify-center">
                 <p className="text-xs lg:text-sm text-black text-justify px-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis..

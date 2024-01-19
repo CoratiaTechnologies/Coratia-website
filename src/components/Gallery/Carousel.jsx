@@ -82,7 +82,7 @@ function Carousel({ carouselImages }) {
               <Image
                 className="carousel-img object-cover"
                 src={imgUrl}
-                loading="eager"
+                loading="lazy"
                 width={580}
                 height={435}
                 alt={`Alt ${index}`}
