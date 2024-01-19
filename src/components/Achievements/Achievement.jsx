@@ -24,7 +24,7 @@ export default function Achievements() {
       
     `}</style>
 
-      <div className="bg-white flex items-center justify-center pt-6 md:pt-10">
+      <div className="bg-white flex items-center justify-center pt-6 md:pt-24">
         <Heading className="py-5 md:py-10">Achievements</Heading>
       </div>
       <div className="w-full px-5 bg-white">
@@ -50,9 +50,9 @@ export default function Achievements() {
                 />
               </div>
               <div className="w-full h-[45px] flex items-center justify-center">
-              <p className="text-center text-sm lg:text-base text-black">
-                {item.text}
-              </p>
+                <p className="text-center text-sm lg:text-base text-black">
+                  {item.text}
+                </p>
               </div>
             </div>
           ))}
