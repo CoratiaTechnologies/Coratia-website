@@ -29,14 +29,14 @@ export const achievementcontent = [
   },
   {
     id: 5,
-    text: "Most promising startup, 2022 by IESA",
+    text: "Honored by Shri Ashwini Vaishnaw Ji at DCIS-2023, Ministry of Communication",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705431827/ash_yknxhj.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
     id: 6,
-    text: "Aaraon Capital chairman David Wolfe",
+    text: "Aaron Capital chairman David Wolfe",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705412863/IMG-20221202-WA0041_k5pb8r.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",

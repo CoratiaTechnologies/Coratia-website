@@ -504,25 +504,10 @@ function page() {
               <h2>Contact Information</h2>
               <p>
                 Address: Coratia Technologies Pvt. Ltd. Foundation for
-                Technology &amp;amp; Business Incubation, NIT Rourkela
+                Technology &amp; Business Incubation, NIT Rourkela
               </p>
-              <p>
-                Email:{" "}
-                <a
-                  href="/cdn-cgi/l/email-protection"
-                  class="__cf_email__"
-                  data-cfemail="40232f2e3421233400232f32213429216e232f2d"
-                >
-                  [email&#160;protected]
-                </a>
-              </p>
+              <p>Email: contact@coratia.com</p>
               <hr />
-              <p>
-                Generated using{" "}
-                <a href="https://www.termsofusegenerator.net">
-                  Terms of Use Generator
-                </a>
-              </p>
             </div>
           </div>
         </div>

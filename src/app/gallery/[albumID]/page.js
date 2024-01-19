@@ -7,7 +7,7 @@ import "./gallery.css";
 
 export default function Gallery({ params }) {
   return (
-    <div className="bg-white py-14">
+    <div className="bg-white pt-24 pb-64">
       <div className="bg-white pt-7 md:pt-7">
         <Heading className="text-center font-semibold pb-3 font-poppins">
           {gallerycontent[params.albumID].title}

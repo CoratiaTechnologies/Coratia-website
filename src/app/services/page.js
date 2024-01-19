@@ -7,9 +7,9 @@ import { services } from "../../../config/content/Services";
 
 export default function Services() {
   return (
-    <>
-      <Heading className="mt-24 text-center">Solutions We Offer</Heading>
-      <div className="flex flex-wrap gap-x-3 pt-4 pb-32 px-5 md:px-10">
+    <div className="bg-white pt-12">
+      <Heading className="mt-[68px] text-center">Solutions We Offer</Heading>
+      <div className="flex flex-wrap gap-x-3 pt-4 pb-64 px-5 md:px-10">
         {services.map((item) => (
           <div className="w-[300px] h-[320px] text-black mx-auto mt-2 overflow-hidden">
             <Image
@@ -30,6 +30,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
