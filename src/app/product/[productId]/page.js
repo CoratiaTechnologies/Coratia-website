@@ -11,7 +11,8 @@ function productPage({ params }) {
 
   return (
     <>
-      <div className="md:flex items-center justify-center pt-24 pb-7 px-5 md:px-10 text-black">
+    <div className="h-[544px] md:h-[424px]">
+      <div className="md:flex fixed -z-20 items-center justify-center pt-24 pb-7 px-5 md:px-10 text-black">
         <img
           src={product.image}
           alt=""
@@ -23,6 +24,7 @@ function productPage({ params }) {
           {product.motto} <br /> {product.name}
         </h2>
       </div>
+    </div>
       <div className="pb-14 text-center bg-slate-800">
         <h1 className="text-white text-5xl py-5 font-bold">{product.name}</h1>
         <div className="text-white pt-3 px-4 md:px-28 sm:px-14 md:text-lg text-base text-justify">
