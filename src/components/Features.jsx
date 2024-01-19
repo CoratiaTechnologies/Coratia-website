@@ -16,7 +16,7 @@ export default function Features(){
             alt=""
             height={1080}
             width={2140}
-            className="w-auto mx-auto max-h-[72vh]"
+            className="w-auto mx-auto max-h-[72vh] shadow-lg"
             />
         </div>
         </>
