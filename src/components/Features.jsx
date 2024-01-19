@@ -10,7 +10,8 @@ export default function Features(){
         <div className="text-center pt-7 bg-white">
             <Heading>Product Features</Heading>
         </div>
-        <div className="w-full p-5 rounded-sm overflow-hidden bg-white">
+        <div className="w-full p-5 bg-white">
+            <div className="">
             <Image
             src={featureImage}
             alt=""
@@ -18,6 +19,7 @@ export default function Features(){
             width={2140}
             className="w-auto mx-auto max-h-[72vh] shadow-lg"
             />
+            </div>
         </div>
         </>
     )

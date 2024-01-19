@@ -27,9 +27,9 @@ export default function Home() {
         <>
           <Hero />
           <HeroText />
-          <Features />
           <AboutUs />
           <Companies />
+          <Features />
           <Achievements />
           <Awards />
           <Testimonials />
