@@ -50,7 +50,7 @@ export default function Map() {
                 <br />
               </React.Fragment>
             ))}
-            Email:
+            Email:&nbsp;
             <a href="mailto:contact@coratia.com" className="underline">
               {mapcontent.email}
             </a>

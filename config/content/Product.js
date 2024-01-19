@@ -1,8 +1,8 @@
 export const productcontent = [
   {
     id: 1,
-    name: "ROV Jaladuta",
-    motto: "Underwater Cleaning and Inspection System",
+    name: "Jaladuta",
+    motto: "UNDERWATER CLEANING AND INSPECTION SYSTEM",
     image:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_500,h_300,g_auto/v1704989555/Jaladutta_jzwgus.jpg",
     description: `ROV Jaladuta is designed for efficient underwater operations, specializing in cleaning ship hulls, conducting minor salvage activities, and performing surveys and inspections of submerged civil infrastructures. With a depth capability of 150 meters, Jaladuta is a reliable and versatile tool for maintaining the integrity of underwater structures.
@@ -36,8 +36,8 @@ export const productcontent = [
   },
   {
     id: 2,
-    name: "ROV Jalasimha",
-    motto: "Advanced Underwater Inspection and Maintenance System",
+    name: "Jalasimha",
+    motto: "ADVANCED UNDERWATER INSPECTION AND MAINTENANCE SYSTEM",
     image:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_500,h_300,g_auto/v1705330946/jalasimha_oxqldi.jpg",
     description: `Building upon the success of its predecessor, ROV Jalasimha represents the next generation of underwater technology. With enhanced compact design, advanced features, and an increased depth capability of 300 meters, Jalasimha sets new standards for underwater inspection and maintenance.

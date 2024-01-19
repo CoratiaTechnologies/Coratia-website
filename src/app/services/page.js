@@ -8,8 +8,8 @@ import { services } from "../../../config/content/Services";
 export default function Services() {
   return (
     <>
-      <Heading className="mt-36 text-center">Solutions We Offer</Heading>
-      <div className="flex flex-wrap gap-x-3 pt-4 pb-16 px-5 md:px-10">
+      <Heading className="mt-24 text-center">Solutions We Offer</Heading>
+      <div className="flex flex-wrap gap-x-3 pt-4 pb-32 px-5 md:px-10">
         {services.map((item) => (
           <div className="w-[300px] h-[320px] text-black mx-auto mt-2 overflow-hidden">
             <Image
@@ -22,7 +22,7 @@ export default function Services() {
             />
 
             <h1 className="text-center text-lg font-semibold">{item.name}</h1>
-            <ul className="list-disc text-sm px-8">
+            <ul className="list-disc text-sm px-8 py-4">
               {item.text.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}

@@ -1,50 +1,50 @@
-.main{
-    text-align: center;
-    margin-top:30px ;
-  }
-  .flex_row{
-    justify-content: center;
-    display: flex;
-    padding-top: 20px;
-  }
-.main img{
+.main {
+  text-align: center;
+  margin-top: 30px;
+}
+.flex_row {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.main img {
   height: 480px;
   width: 800px;
   object-fit: cover;
   border-radius: 7px;
-}  
-.thumbnail{
+}
+.thumbnail {
   padding-left: 20px;
 }
 @media screen and (max-width: 768px) {
-  .main img{
+  .main img {
     height: 360px;
     width: 600px;
   }
 }
 @media screen and (max-width: 450px) {
-  .main img{
+  .main img {
     height: 216px;
     width: 360px;
   }
-  .btns{
+  .btns {
     display: none;
   }
-  .thumbnail{
+  .thumbnail {
     padding-left: 7px;
   }
 }
 
-.thumbnail img{
+.thumbnail img {
   height: 70px;
   width: 100px;
   object-fit: cover;
   margin: auto;
 }
-.clicked{
-  border: 5px solid black;
+.clicked {
+  border: 5px solid white;
 }
-.btns{
+.btns {
   height: 40px;
   width: 40px;
 }
