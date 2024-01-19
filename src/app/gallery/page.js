@@ -11,7 +11,7 @@ function page() {
   return (
     <div className="w-full px-5 bg-white mt-[68px] pt-12 pb-64">
       <Heading className="text-center pb-5">Gallery</Heading>
-      <div className="grid md:grid-cols-4 2xl:grid-cols-4 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-max mx-auto md:gap-x-8 lg:gap-x-16 gap-y-5 md:gap-y-10">
         {gallerycontent.map((item, index) => (
           <Link href={`/gallery/${index}`} key={index} className="rounded-xl overflow-hidden hover:scale-105 border-2 shadow-xl transition">
             <div

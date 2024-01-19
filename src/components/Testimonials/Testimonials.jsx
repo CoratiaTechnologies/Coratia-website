@@ -111,7 +111,10 @@ export default function Testimonials() {
                 <div className="">
                   <div className="relative w-full md:w-[90%] mx-auto">
                     <QuoteIcon className="absolute top-0 left-0 text-gray-400 w-10 h-10 transform rotate-180" />
-                    <p className="text-base text-center sm:text-lg italic px-10 sm:px-12 py-4 sm:py-6 text-black font-bold">
+                    <p
+                      className="text-base text-center sm:text-lg italic px-10 sm:px-12 py-4 sm:py-6 text-black font-bold"
+                      style={{ letterSpacing: "0.05rem" }}
+                    >
                       {testimonial.text}
                     </p>
                     <QuoteIcon className="absolute bottom-1 right-1 text-gray-400 w-10 h-10" />

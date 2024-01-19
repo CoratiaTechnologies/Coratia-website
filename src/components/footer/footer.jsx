@@ -62,6 +62,13 @@ export default function Footer() {
             <p className="mt-4 px-5 md:px-0 md:pr-6 text-sm md:text-left text-center">
               We create possibilities for the connected world.
             </p>
+            <Image
+              alt="Company Logo"
+              className=" mt-5 object-fill"
+              height={45}
+              src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1705693133/make_in_india-removebg-preview_ulqcak.png"
+              width={100}
+            />
           </div>
 
           <div className="flex flex-col items-center md:items-start">
