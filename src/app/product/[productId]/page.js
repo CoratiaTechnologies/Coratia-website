@@ -12,8 +12,8 @@ function productPage({ params }) {
 
   return (
     <>
-      <div className="h-[544px] md:h-[424px]">
-        <div className="md:flex fixed -z-20 items-center justify-center pt-24 pb-7 px-5 md:px-10 bg-white text-black">
+      <div className="h-[581px] md:h-[424px]">
+        <div className="md:flex fixed -z-20 items-center justify-center pt-24 pb-24 md:pb-12 px-5 md:px-10 bg-white text-black">
           <img
             src={product.image}
             alt=""
@@ -29,7 +29,7 @@ function productPage({ params }) {
       </div>
       <div className="pb-14 text-center bg-[#38809a]">
         <h1
-          className="text-white text-5xl pb-5  pt-8 font-bold"
+          className="text-white text-5xl pb-5 mt-4 pt-8 font-bold"
           style={{
             fontFamily: "Samarkan Normal",
             fontWeight: "normal",
