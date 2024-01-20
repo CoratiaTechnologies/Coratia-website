@@ -7,7 +7,7 @@ import Image from "next/image";
 const companySection = [
   {
     id: "Contact",
-    link: "#contact",
+    link: "/#contact",
   },
   {
     id: "Products",
@@ -19,7 +19,7 @@ const companySection = [
   },
   {
     id: "Career",
-    link: "#",
+    link: "/#contact",
   },
 ];
 
