@@ -49,7 +49,7 @@ function Navbar() {
     `}</style>
       <nav className="md:flex justify-between items-center z-30 fixed w-full h-[68px] bg-black top-0">
         <div className="flex justify-between items-center">
-          <a href="/">
+          <Link href="/">
             <Image
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               alt="coratia"
@@ -59,7 +59,7 @@ function Navbar() {
               className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
               style={{ filter: "contrast(1.5)" }}
             />
-          </a>
+          </Link>
           <span className="md:hidden relative px-4">
             <Hamburger
               toggled={navbar}
@@ -115,7 +115,7 @@ function Navbar() {
             ) : index === navComponents.length - 1 ? (
               <li key={navComponent.id}>
                 <div className="w-full my-14 md:my-0 text-center">
-                  <a
+                  <Link
                     onClick={() => {
                       if (navbar) setNavbar((navbar) => !navbar);
                       handleLinkClick(navComponent.scroll);
@@ -126,7 +126,7 @@ function Navbar() {
                     }`}
                   >
                     {navComponent.title}
-                  </a>
+                  </Link>
                 </div>
               </li>
             ) : (
