@@ -1,6 +1,7 @@
 export const gallerycontent = [
   {
     title: "Swavlamban 2023",
+    desc: "Swavlamban is the Naval Innovation & Indigenisation Organisation’s (NIIO) annual seminar, and Swavlamban 2023 was the second edition in the series. This event was aimed to engage the Indian industry and academia in achieving ‘Self-reliance in Defence Sector.",
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682898/IMG-20231003-WA0035_gobiod.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682894/IMG-20231004-WA0067_djmfma.jpg",
@@ -12,6 +13,7 @@ export const gallerycontent = [
   },
   {
     title: "Digital India 2022",
+    desc: "The Digital India Week 2022 with the theme 'Catalyzing New India's Techade’ kicked off on 4th July at Gandhinagar, Gujarat. The July 4th to 9th weeklong event commemorated the path-breaking journey of the flagship initiative of the Digital India Programme that was inaugurated by Prime Minister Narendra Modi.",
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682892/IMG_20220704_130307_ztiaps.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682840/IMG-20220706-WA0012_dkorxe.jpg",
@@ -23,6 +25,7 @@ export const gallerycontent = [
   },
   {
     title: "Make In Odisha Conclave 2022",
+    desc: "The Make In Odisha Conclave’22 was the flagship investor summit of the Government of Odisha. After the resounding success of the event in 2016 and 2018, the state had decided to organize the third edition of the marquee event at Bhubaneswar from November 30 to December 04, 2022.",
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682894/IMG-20221203-WA0057_m9ihyt.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682895/IMG-20221204-WA0004_nx7lji.jpg",
@@ -32,6 +35,7 @@ export const gallerycontent = [
   },
   {
     title: "Defence Expo 2022",
+    desc: "DefExpo is a flagship biennial event of the Ministry of Defence, showcasing the land, naval, air as well as homeland security systems.",
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682882/IMG-20221018-WA0023_nh6wkj.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682883/IMG-20221018-WA0076_rgpfzb.jpg",
@@ -39,6 +43,7 @@ export const gallerycontent = [
   },
   {
     title: "Milestones",
+    desc: "Milestone represents the culmination of hard work, dedication, and perseverance. It serve as beacons, guiding us toward our goals, providing a sense of achievement and motivation to continue the pursuit of excellence.",
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682895/IMG-20230108-WA0047_bzvlfd.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682895/IMG-20221206-WA0005_ifffxp.jpg",
