@@ -59,12 +59,10 @@ export default function Footer() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               width={280}
             />
-            <p className="mt-4 px-5 md:px-0 md:pr-6 text-sm md:text-left text-center">
-              We create possibilities for the connected world.
-            </p>
+            
             <Image
               alt="Company Logo"
-              className=" mt-5 object-fill"
+              className=" mt-5 ml-5 object-fill"
               height={45}
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1705693133/make_in_india-removebg-preview_ulqcak.png"
               width={100}
@@ -76,7 +74,12 @@ export default function Footer() {
               VISIT
             </h3>
             <p className="mt-2 text-sm px-5 md:px-0 text-center md:text-left">
-              {mapcontent.address}
+            {mapcontent.address.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
             </p>
           </div>
 
