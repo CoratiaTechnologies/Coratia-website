@@ -32,7 +32,7 @@ export default function Achievements() {
           {achievementcontent.map((item) => (
             <div
               key={item.id}
-              className="card rounded-xl border-2 shadow-xl lg:w-[400px] lg:h-[280px] w-[300px] h-[220px] overflow-hidden"
+              className="card rounded-xl border-2 shadow-xl lg:w-[400px] lg:h-[300px] w-[300px] h-[220px] overflow-hidden"
             >
               <div>
                 {/* <div
@@ -49,7 +49,7 @@ export default function Achievements() {
                   className="lg:h-[230px] h-[170px] w-full object-cover"
                 />
               </div>
-              <div className="w-full h-[45px] flex items-center justify-center">
+              <div className="w-full h-[65px] flex items-center justify-center">
                 <p className="text-center text-sm lg:text-base text-black">
                   {item.text}
                 </p>

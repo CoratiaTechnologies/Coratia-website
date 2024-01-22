@@ -37,8 +37,8 @@ function page() {
                   {item.title}
                 </p>
               </div>
-              <div className="w-full h-[152px] lg:h-[188px] flex justify-center">
-                <p className="text-xs lg:text-sm text-black text-justify px-4">
+              <div className="w-full h-[152px] lg:h-[145px] flex justify-center">
+                <p className="text-xs text-black text-justify px-4">
                   {item.desc}
                 </p>
               </div>
