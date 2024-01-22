@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./ImageSlider.css";
 import { ChevronLeft, ChevronRight } from "react-feather";
 
@@ -12,17 +12,32 @@ function ImageSlider({ gallery }) {
     setWordData(wordSlider);
   };
   const handleNext = () => {
-    let index = val < imgs.length - 1 ? val + 1 : val;
+    let index = val < imgs.length - 1 ? val + 1 : 0;
     setVal(index);
     const wordSlider = imgs[index];
     setWordData(wordSlider);
   };
   const handlePrevious = () => {
-    let index = val <= imgs.length - 1 && val > 0 ? val - 1 : val;
+    let index = val <= imgs.length - 1 && val > 0 ? val - 1 : imgs.length - 1;
     setVal(index);
     const wordSlider = imgs[index];
     setWordData(wordSlider);
   };
+  const handleNextCallback = useCallback(() => {
+    let index = val < imgs.length - 1 ? val + 1 : 0;
+    setVal(index);
+    const wordSlider = imgs[index];
+    setWordData(wordSlider);
+  }, [val, imgs]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextCallback();
+    }, 2500);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [handleNextCallback]);
   return (
     <div className="main">
       <div className="flex items-center justify-center">
