@@ -49,7 +49,7 @@ export default function Achievements() {
                   className="lg:h-[230px] h-[170px] w-full object-cover"
                 />
               </div>
-              <div className="w-full h-[65px] flex items-center justify-center">
+              <div className="w-full h-[50px] lg:h-[70px] flex items-center justify-center">
                 <p className="text-center text-sm lg:text-base text-black">
                   {item.text}
                 </p>

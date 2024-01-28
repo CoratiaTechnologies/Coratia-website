@@ -36,23 +36,11 @@ export const awards = [
     year: "2022",
   },
   {
-    text: "Recipient of NIDHI Prayas DST",
-    year: "2023",
-  },
-  {
     text: "Best Startup of the Year by Electronic Industries Assosciation Of India",
     year: "2023",
   },
   {
     text: "Winner of iDEX Challenge",
     year: "2022",
-  },
-  {
-    text: "Winner of MEITY TIDE 2.0",
-    year: "2021",
-  },
-  {
-    text: "Winner of Nidhi EIR Grant",
-    year: "2021",
   },
 ];
