@@ -26,7 +26,7 @@ const HeadingMap = styled.div`
 
 export default function Map() {
   return (
-    <div id="contact" className="bg-white text-black px-5 md:px-10 py-32">
+    <div id="contact" className=" text-black px-5 md:px-10 py-32">
       <div className="w-[100%] flex flex-wrap">
         <HeadingMap className="text-center w-full md:hidden block pb-4">
           Get in Touch

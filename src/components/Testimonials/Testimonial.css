@@ -20,7 +20,6 @@
 .carouselContainer2 {
   overflow: hidden;
   width: 100%;
-  background-color: white;
 }
 .slick-prev:before,
 .slick-next:before {

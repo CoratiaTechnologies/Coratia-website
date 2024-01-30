@@ -16,10 +16,6 @@ export const awards = [
     year: "2022",
   },
   {
-    text: "Winner of NRDC seed fund grant by National Research Development Corportation",
-    year: "2023",
-  },
-  {
     text: "Winner of IMAGE COE in Computer Vision & AI",
     year: "2023",
   },

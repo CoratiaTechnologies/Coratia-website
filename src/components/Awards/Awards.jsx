@@ -8,9 +8,9 @@ const awardImage =
 
 export default function Awards() {
   return (
-    <div className="bg-white pt-32 hidden md:block">
+    <div className="pt-32 hidden md:block">
       <Heading className="text-center mb-7">Awards & Recognition</Heading>
-      <div className="flex flex-wrap px-14 gap-x-12 gap-y-20 justify-evenly">
+      <div className="flex flex-wrap gap-x-12 gap-y-20 justify-evenly">
         {awards.map((item, index) => (
           <div key={index} className="w-[200px] h-[160px]">
             <Image
@@ -18,10 +18,10 @@ export default function Awards() {
               width={100}
               src={awardImage}
               alt=""
-              className="mx-auto w-[100px] h-[100px] object-cover my-5"
+              className="mx-auto w-[80px] h-[80px] object-cover my-5"
             />
-            <p className="text-black text-center">{item.text}</p>
-            <p className="text-black text-center">{item.year}</p>
+            <p className="text-black text-sm text-center">{item.text}</p>
+            <p className="text-black text-sm text-center">{item.year}</p>
           </div>
         ))}
       </div>
