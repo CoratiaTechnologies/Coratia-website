@@ -8,7 +8,7 @@ const featureImage =
 export default function Features() {
   return (
     <>
-      <div className="text-center md:pt-32 pt-16 bg-white">
+      <div className="text-center md:pt-32 pt-16 pb-10 bg-white">
         <Heading>Product Features</Heading>
       </div>
       <div className="w-full bg-white">
