@@ -4,7 +4,7 @@
 .slide,
 .slide img {
   width: 580px;
-  border-radius: 20px;
+  border-radius: 10px;
   aspect-ratio: 4/3;
   object-fit: cover;
 }
@@ -20,7 +20,7 @@
   opacity: 1;
   transform: scale(1);
   transition: 0.8s;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .carouselContainer {
   overflow: hidden;
@@ -95,13 +95,13 @@
   .slide,
   .slide img {
     height: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 }
 @media screen and (max-width: 491px) {
   .slide img {
     height: 280px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 350px;
     position: relative;
     margin: auto;

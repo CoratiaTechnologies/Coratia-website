@@ -56,7 +56,7 @@ function Navbar() {
               height={"300"}
               width={"300"}
               loading="eager"
-              className="cursor-pointer h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
+              className="cursor-pointer h-12 sm:h-14 w-auto ml-4 sm:ml-12 md:mt-0 mt-3"
               style={{ filter: "contrast(1.5)" }}
             />
           </Link>
@@ -118,11 +118,11 @@ function Navbar() {
                   <Link
                     onClick={() => {
                       if (navbar) setNavbar((navbar) => !navbar);
-                      handleLinkClick(navComponent.scroll);
+                      
                     }}
                     href={navComponent.scroll}
                     className={`text-white bg-[#1ca9c9] text-sm font-normal md:py-6 py-2 px-5 font-nidus hover:text-black transition ${
-                      activeLink === navComponent.scroll ? "!text-slate-900" : ""
+                      activeLink === navComponent.scroll ? "!text-white" : ""
                     }`}
                   >
                     {navComponent.title}
