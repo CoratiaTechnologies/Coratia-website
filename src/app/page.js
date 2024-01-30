@@ -31,9 +31,11 @@ export default function Home() {
           <Companies />
           <Features />
           <Achievements />
-          <Awards />
-          <Testimonials />
-          <Map />
+          <div className="bg-gradient-to-b from-white to-blue-100">
+            <Awards />
+            <Testimonials />
+            <Map />
+          </div>
         </>
       )}
     </>

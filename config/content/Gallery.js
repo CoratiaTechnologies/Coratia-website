@@ -39,6 +39,7 @@ export const gallerycontent = [
     images: [
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682882/IMG-20221018-WA0023_nh6wkj.jpg",
       "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682883/IMG-20221018-WA0076_rgpfzb.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1705682882/IMG-20221018-WA0023_nh6wkj.jpg",
     ],
   },
   {

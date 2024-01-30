@@ -73,7 +73,7 @@ export default function Footer() {
             <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
               VISIT
             </h3>
-            <p className="mt-2 text-sm px-5 md:px-0 text-center md:text-left">
+            <p className="mt-2 text-sm leading-7 px-5 md:px-0 text-center md:text-left">
             {mapcontent.address.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}

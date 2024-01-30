@@ -26,9 +26,9 @@ const HeadingMap = styled.div`
 
 export default function Map() {
   return (
-    <div id="contact" className="bg-white text-black px-5 md:px-10 py-32">
+    <div id="contact" className=" text-black px-5 md:px-10 py-32">
       <div className="w-[100%] flex flex-wrap">
-        <HeadingMap className="text-center w-full md:hidden block pb-4">
+        <HeadingMap className="text-center w-full md:hidden block pb-7">
           Get in Touch
         </HeadingMap>
         <iframe
@@ -39,11 +39,11 @@ export default function Map() {
           className="md:w-[50%] w-[100%] m-auto rounded-md"
         />
 
-        <div className="mt-2 md:mt-0 mx-auto md:pl-20 md:w-[40%] m-auto">
+        <div className="mt-2 md:mt-0 mx-auto md:pl-20 w-full md:w-[40%]">
           <HeadingMap className="text-5xl hidden md:block font-bold pt-7">
             Get in Touch
           </HeadingMap>
-          <p className="mt-2 text-base md:text-lg md:w-[80%]">
+          <p className="mt-10 md:mt-2 leading-7 text-center md:text-left text-base md:text-lg md:w-[80%]">
             {mapcontent.address.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}
@@ -65,7 +65,7 @@ export default function Map() {
               borderRadius: 10,
               cursor: "pointer",
             }}
-            className="my-button mt-3"
+            className="my-button mt-10 sm:mt-3 ml-[26%] sm:ml-[35%] md:ml-0"
           >
             Contact Us!
           </PopupButton>
