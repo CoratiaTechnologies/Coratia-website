@@ -50,7 +50,7 @@ export default function Footer() {
   return (
     <footer className="bg-[rgb(28,27,27)] text-white w-full">
       <div className="pb-3 pt-1 px-4 sm:px-6 lg:px-8">
-        <div className="mt-2 md:mt-6 mx-4 grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-20 ">
+        <div className="mt-2 md:mt-6 mx-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-20 ">
           <div className="hidden md:flex flex-col items-center md:items-start">
             <Image
               alt="Company Logo"
@@ -73,7 +73,7 @@ export default function Footer() {
             <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
               VISIT
             </h3>
-            <p className="mt-2 text-sm leading-7 px-5 md:px-0 text-center md:text-left">
+            <p className="mt-2 text-sm leading-7 px-1 md:px-0 text-center md:text-left">
             {mapcontent.address.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}
@@ -88,7 +88,7 @@ export default function Footer() {
               <h3 className="text-lg sm:text-xl font-medium text-[rgb(0,157,201)]">
                 COMPANY
               </h3>
-              <ul className="mt-1 grid grid-cols-2 md:block md:space-y-1 text-center md:text-left text-white">
+              <ul className="mt-1 grid grid-cols-4 md:block md:space-y-1 text-center md:text-left text-white">
                 {companySection.map((item, index) => (
                   <li key={index} className="mx-3 md:mx-0">
                     <Link
