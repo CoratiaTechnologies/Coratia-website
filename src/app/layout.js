@@ -43,6 +43,7 @@ export const metadata = {
     "oceanographic",
     "India",
     "NIT Rourkela",
+    "web design",
   ],
   openGraph: {
     type: "website",
