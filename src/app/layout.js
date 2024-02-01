@@ -48,7 +48,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://coratia.netlify.app/",
+    url: "https://coratia.com/",
     title: "Coratia Technologies Ltd.",
     description:
       "Coratia Technologies Pvt. Ltd. is a trailblazing company specializing in underwater robotics. We offer comprehensive solutions in the field of Remotely Operated Vehicles (ROVs) and Autonomous Underwater Vehicles (AUVs), catering to a wide range of underwater challenges using cutting-edge technologies.",
