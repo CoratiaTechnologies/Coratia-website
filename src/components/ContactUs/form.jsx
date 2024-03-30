@@ -35,7 +35,7 @@ export default function ContactUsForm() {
     }
   };
   return (
-    <div className="w-full px-12 bg-white mt-[68px] pt-12 pb-32 text-black">
+    <div>
       <h1>{message}</h1>
       <div className="max-w-md">
         <form
