@@ -13,7 +13,7 @@ export default function ContactUsForm() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyMK-FMXlNDftHM_V2PEmOcbtx1TlpuJlornwBW77WUIgdACmfmNEl-0vzYRZ5eP0ax/exec",
+        "https://script.google.com/macros/s/AKfycbwsezEfLZTx_tRuKrpYmioPmJ1URp4qwZcr0FNO6ofs4bTglkXJ2ielsOVD0xDR9ZeQ/exec",
         {
           method: "POST",
           body: formData,
