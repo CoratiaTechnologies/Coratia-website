@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { redirect } from "next/navigation";
-import "./form.css";
 
 export default function ContactUsForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -26,6 +24,7 @@ export default function ContactUsForm() {
         const responseData = await response.text();
         setMessage(responseData);
         alert("Submitted! We'll contact you soon!");
+        event.target.reset();
         window.location.href = "/";
       } else {
         setMessage("Error submitting form.");
