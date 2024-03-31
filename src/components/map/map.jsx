@@ -1,5 +1,5 @@
 import React from "react";
-import { PopupButton } from "@typeform/embed-react";
+import Link from "next/link";
 import { mapcontent } from "../../../config/content/Map";
 import styled from "styled-components";
 
@@ -43,7 +43,7 @@ export default function Map() {
           <HeadingMap className="text-5xl hidden md:block font-bold pt-7">
             Get in Touch
           </HeadingMap>
-          <p className="mt-10 md:mt-2 leading-7 text-center md:text-left text-base md:text-lg md:w-[80%]">
+          <p className="mt-10 mb-10 md:mt-2 leading-7 text-center md:text-left text-base md:text-lg md:w-[80%]">
             {mapcontent.address.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}
@@ -55,20 +55,20 @@ export default function Map() {
               {mapcontent.email}
             </a>
           </p>
-          <PopupButton
-            id="LMtfdVaJ"
+          <Link
+            href="/contactus"
             style={{
               fontSize: 20,
-              padding: "5px 25px",
+              padding: "7px 25px",
               backgroundColor: "#1ca9c9",
               color: "white",
               borderRadius: 10,
               cursor: "pointer",
             }}
-            className="my-button mt-10 sm:mt-3 ml-[26%] sm:ml-[35%] md:ml-0"
+            className="mt-10 sm:mt-3 ml-[26%] sm:ml-[35%] md:ml-0"
           >
             Contact Us!
-          </PopupButton>
+          </Link>
         </div>
       </div>
     </div>
