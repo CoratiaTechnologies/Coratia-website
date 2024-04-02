@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { mapcontent } from "../../../config/content/Map";
 import styled from "styled-components";
+import ContactUsForm from "../ContactUs/form";
+import { Heading } from "../Typography";
 
 const HeadingMap = styled.div`
   font-family: Poppins;
@@ -26,49 +28,24 @@ const HeadingMap = styled.div`
 
 export default function Map() {
   return (
-    <div id="contact" className=" text-black px-5 md:px-10 py-32">
+    <div id="contact" className=" text-black px-5 md:px-10 py-12">
+      <Heading className="text-5xl hidden md:block font-bold pt-7 text-center mb-10">
+        Get in Touch
+      </Heading>
       <div className="w-[100%] flex flex-wrap">
         <HeadingMap className="text-center w-full md:hidden block pb-7">
           Get in Touch
         </HeadingMap>
         <iframe
           src={mapcontent.gmap_link}
-          height="400"
+          height="550"
           allowFullScreen={true}
           loading="lazy"
-          className="md:w-[50%] w-[100%] m-auto rounded-md"
+          className="md:w-[50%] w-[100%] m-auto rounded-md h-[450px] md:h-[550px]"
         />
 
-        <div className="mt-2 md:mt-0 mx-auto md:pl-20 w-full md:w-[40%]">
-          <HeadingMap className="text-5xl hidden md:block font-bold pt-7">
-            Get in Touch
-          </HeadingMap>
-          <p className="mt-10 mb-10 md:mt-2 leading-7 text-center md:text-left text-base md:text-lg md:w-[80%]">
-            {mapcontent.address.split("\n").map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-              </React.Fragment>
-            ))}
-            Email:&nbsp;
-            <a href="mailto:contact@coratia.com" className="underline">
-              {mapcontent.email}
-            </a>
-          </p>
-          <Link
-            href="/contactus"
-            style={{
-              fontSize: 20,
-              padding: "7px 25px",
-              backgroundColor: "#1ca9c9",
-              color: "white",
-              borderRadius: 10,
-              cursor: "pointer",
-            }}
-            className="mt-10 sm:mt-3 ml-[26%] sm:ml-[35%] md:ml-0"
-          >
-            Contact Us!
-          </Link>
+        <div className="mt-2 md:mt-0 mx-auto md:pl-10 w-full md:w-[40%]">
+          <ContactUsForm />
         </div>
       </div>
     </div>
