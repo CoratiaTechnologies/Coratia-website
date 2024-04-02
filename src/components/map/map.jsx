@@ -33,7 +33,7 @@ export default function Map() {
         Get in Touch
       </Heading>
       <div className="w-[100%] flex flex-wrap">
-        <HeadingMap className="text-center w-full md:hidden block pb-7">
+        <HeadingMap className="text-center w-full md:hidden block pb-7 md:order-1">
           Get in Touch
         </HeadingMap>
         <iframe
@@ -41,10 +41,10 @@ export default function Map() {
           height="550"
           allowFullScreen={true}
           loading="lazy"
-          className="md:w-[50%] w-[100%] m-auto rounded-md h-[450px] md:h-[550px]"
+          className="md:w-[50%] w-[100%] m-auto rounded-md h-[450px] md:h-[550px] md:order-2 order-3"
         />
 
-        <div className="mt-2 md:mt-0 mx-auto md:pl-10 w-full md:w-[40%]">
+        <div className="mt-2 md:mt-0 mx-auto md:pl-10 w-full md:w-[40%] order-2 md:order-3">
           <ContactUsForm />
         </div>
       </div>
