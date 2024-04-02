@@ -3,7 +3,7 @@ export const achievementcontent = [
     id: 1,
     text: "Hon'ble Union Minister Shri Dharmendra Pradhan Ji reviewing our product.",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300182/IMG-20231130-WA0025_sqmkss.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1712080245/WhatsApp_Image_2024-04-02_at_11.15.00_PM_t5ucsa.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
@@ -36,9 +36,9 @@ export const achievementcontent = [
   },
   {
     id: 6,
-    text: "Aaron Capital chairman David Wolfe",
+    text: "Featured on Shark Tank India Season 3, 2024",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705412863/IMG-20221202-WA0041_k5pb8r.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1712079327/IMG_2528_c4oigs.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
 ];
