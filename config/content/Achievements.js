@@ -1,7 +1,7 @@
 export const achievementcontent = [
   {
     id: 1,
-    text: "Hon'ble Union Minister Shri Dharmendra Pradhan Ji reviewing our product.",
+    text: "Hon'ble Union Minister Shri Dharmendra Pradhan felicitating us on the occasion of Utkala Divasa",
     picture:
       "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1712080245/WhatsApp_Image_2024-04-02_at_11.15.00_PM_t5ucsa.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
