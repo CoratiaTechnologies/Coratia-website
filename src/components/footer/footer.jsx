@@ -59,7 +59,7 @@ export default function Footer() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               width={280}
             />
-            
+
             <Image
               alt="Company Logo"
               className=" mt-5 ml-5 object-fill"
@@ -74,13 +74,17 @@ export default function Footer() {
               VISIT
             </h3>
             <p className="mt-2 text-sm leading-7 px-1 md:px-0 text-center md:text-left">
-            {mapcontent.address.split("\n").map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-              </React.Fragment>
-            ))}
+              {mapcontent.address.split("\n").map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
             </p>
+            Email:&nbsp;
+            <a href="mailto:contact@coratia.com" className="underline">
+              {mapcontent.email}
+            </a>
           </div>
 
           <div className="md:grid md:grid-cols-2 md:gap-8">
