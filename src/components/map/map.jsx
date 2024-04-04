@@ -38,10 +38,10 @@ export default function Map() {
         </HeadingMap>
         <iframe
           src={mapcontent.gmap_link}
-          height="550"
+          height="450"
           allowFullScreen={true}
           loading="lazy"
-          className="md:w-[50%] w-[100%] m-auto rounded-md h-[450px] md:h-[550px] md:order-2 order-3"
+          className="md:w-[50%] w-[100%] m-auto rounded-md md:order-2 order-3"
         />
 
         <div className="mt-2 md:mt-0 mx-auto md:pl-10 w-full md:w-[40%] order-2 md:order-3">

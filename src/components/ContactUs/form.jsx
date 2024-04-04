@@ -56,35 +56,37 @@ export default function ContactUsForm() {
               className="shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-white text-sm font-bold mb-2"
-            >
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="phone"
-              className="block text-white text-sm font-bold mb-2"
-            >
-              Phone
-            </label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="Phone"
-              className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-            />
+          <div className="mb-4 flex flex-wrap">
+            <div className="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0">
+              <label
+                htmlFor="email"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div className="w-full md:w-1/2 md:pl-2">
+              <label
+                htmlFor="phone"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                Phone
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Phone"
+                className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
           </div>
           <div className="mb-4">
             <label
