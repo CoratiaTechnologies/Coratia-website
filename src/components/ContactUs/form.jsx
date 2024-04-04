@@ -46,7 +46,7 @@ export default function ContactUsForm() {
               htmlFor="full-name"
               className="block text-white text-sm font-bold mb-2"
             >
-              Full Name*
+              Full Name
             </label>
             <input
               id="full-name"
@@ -54,7 +54,6 @@ export default function ContactUsForm() {
               type="text"
               placeholder="Full Name"
               className="shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
-              required
             />
           </div>
           <div className="mb-4">
@@ -62,7 +61,7 @@ export default function ContactUsForm() {
               htmlFor="email"
               className="block text-white text-sm font-bold mb-2"
             >
-              Email*
+              Email
             </label>
             <input
               id="email"
@@ -70,7 +69,6 @@ export default function ContactUsForm() {
               type="email"
               placeholder="Email"
               className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
-              required
             />
           </div>
           <div className="mb-4">
@@ -78,7 +76,7 @@ export default function ContactUsForm() {
               htmlFor="phone"
               className="block text-white text-sm font-bold mb-2"
             >
-              Phone*
+              Phone
             </label>
             <input
               id="phone"
@@ -86,7 +84,6 @@ export default function ContactUsForm() {
               type="tel"
               placeholder="Phone"
               className="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              required
             />
           </div>
           <div className="mb-4">
@@ -94,14 +91,13 @@ export default function ContactUsForm() {
               htmlFor="query"
               className="block text-white text-sm font-bold mb-2"
             >
-              Your Query*
+              Your Query
             </label>
             <textarea
               id="query"
               name="query"
               placeholder="Enter your query"
               className="shadow appearance-none border rounded w-full h-[150px] py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              required
             ></textarea>
           </div>
           <div className="flex items-center justify-between">
