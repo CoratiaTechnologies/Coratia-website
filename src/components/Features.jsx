@@ -1,27 +1,137 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Heading } from "./Typography";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
 
 const featureImage =
-  "https://res.cloudinary.com/dgjzygzgx/image/upload/c_pad,b_gen_fill,w_1920,h_1080/v1705707451/https___res.cloudinary_nry4ee.jpg";
+  "https://res.cloudinary.com/dgjzygzgx/image/upload/v1712694201/Screenshot_12_2_neww94.png";
 
-export default function Features() {
+const content = [
+  "Integrated workspace with cameras, multibeam sonar and GPS position",
+  "Compact hydronomic design",
+  "Stereo Vision",
+  "SAR capability",
+  "Dual Camera with 4K",
+  "Auto-Navigation with GPS",
+  "Visibility in turbid water",
+  "Unlimited power Supply",
+  "6 degrees of freedom",
+  "Integrated GPS, USBL & DVL for accurate positioning",
+  "300+ meter depth rating",
+  "Robotic arm with multiple effectors",
+];
+
+const Features = () => {
+  const [isVisible, setIsVisible] = useState(
+    new Array(content.length).fill(false)
+  );
+  const controls = useAnimation();
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsVisible((prevState) => {
+            const newState = [...prevState];
+            newState[parseInt(entry.target.dataset.index, 10)] =
+              entry.isIntersecting;
+            return newState;
+          });
+        });
+      },
+      { threshold: 1 }
+    );
+
+    const targets = document.querySelectorAll(".feature-item");
+    targets.forEach((target) => {
+      observer.observe(target);
+    });
+    return () => {
+      targets.forEach((target) => {
+        observer.unobserve(target);
+      });
+    };
+  }, []);
+  useEffect(() => {
+    if (isVisible.some((item) => item)) {
+      // Play audio when any feature item becomes visible
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+  }, [isVisible]);
+
   return (
-    <>
+    <div className="hidden sm:block">
+      <audio ref={audioRef} src="audio.mp3" />
       <div className="text-center md:pt-32 pt-16 pb-10 bg-white">
         <Heading>Product Features</Heading>
       </div>
-      <div className="w-full bg-white">
-        <div className="">
+      <div className="w-full bg-white relative">
+        <div className="flex justify-center items-end">
           <Image
             src={featureImage}
             alt=""
-            height={1080}
-            width={1920}
-            className="shadow-lg"
+            height={935}
+            width={800}
+            className="object-contain"
           />
+          <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 grid-rows-6 gap-x-8 px-10 gap-y-1 z-1">
+            {content.map((item, index) => {
+              switch ((index + 1) % 2) {
+                case 1:
+                  return (
+                    <motion.div
+                      key={index}
+                      data-index={index}
+                      className={`flex items-center text-black justify-center gap-1 text-center font-bold transition-opacity duration-500 feature-item`}
+                      initial={{ opacity: 0 }}
+                      animate={
+                        isVisible[index] ? { opacity: 1 } : { opacity: 0 }
+                      }
+                      transition={{ duration: 1 }}
+                    >
+                      <p>{item}</p>
+                      <Image
+                        src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1712803851/node-line_hkfwzq.svg"
+                        alt=""
+                        height={15}
+                        width={200}
+                        className="rotate-180 w-[150px] md:w-[200px]"
+                      />
+                    </motion.div>
+                  );
+                case 0:
+                  return (
+                    <motion.div
+                      key={index}
+                      data-index={index}
+                      className={`flex items-center text-black justify-center text-center gap-1 font-bold transition-opacity duration-500 feature-item`}
+                      initial={{ opacity: 0 }}
+                      animate={
+                        isVisible[index] ? { opacity: 1 } : { opacity: 0 }
+                      }
+                      transition={{ duration: 1 }}
+                    >
+                      <Image
+                        src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1712803851/node-line_hkfwzq.svg"
+                        alt=""
+                        height={15}
+                        width={200}
+                        className=" w-[150px] md:w-[200px]"
+                      />
+                      <p>{item}</p>
+                    </motion.div>
+                  );
+              }
+            })}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default Features;
