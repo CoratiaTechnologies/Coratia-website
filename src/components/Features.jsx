@@ -55,7 +55,6 @@ const Features = () => {
   }, []);
   useEffect(() => {
     if (isVisible.some((item) => item)) {
-      // Play audio when any feature item becomes visible
       audioRef.current.play();
     } else {
       audioRef.current.pause();
@@ -69,7 +68,13 @@ const Features = () => {
       <div className="text-center md:pt-32 pt-16 pb-10 bg-white">
         <Heading>Product Features</Heading>
       </div>
-      <div className="w-full bg-white relative">
+      <div
+        className="w-full relative"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at center, #6b7280, #ffffff 40%)",
+        }}
+      >
         <div className="flex justify-center items-end">
           <Image
             src={featureImage}
