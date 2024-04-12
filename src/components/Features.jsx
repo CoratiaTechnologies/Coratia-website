@@ -26,7 +26,6 @@ const Features = () => {
     new Array(content.length).fill(false)
   );
   const controls = useAnimation();
-  const audioRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,18 +52,9 @@ const Features = () => {
       });
     };
   }, []);
-  useEffect(() => {
-    if (isVisible.some((item) => item)) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-    }
-  }, [isVisible]);
 
   return (
     <div className="hidden sm:block">
-      <audio ref={audioRef} src="audio.mp3" />
       <div className="text-center md:pt-32 pt-16 pb-10 bg-white">
         <Heading>Product Features</Heading>
       </div>
@@ -96,7 +86,7 @@ const Features = () => {
                       animate={
                         isVisible[index] ? { opacity: 1 } : { opacity: 0 }
                       }
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 2 }}
                     >
                       <p>{item}</p>
                       <Image
@@ -118,7 +108,7 @@ const Features = () => {
                       animate={
                         isVisible[index] ? { opacity: 1 } : { opacity: 0 }
                       }
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 2 }}
                     >
                       <Image
                         src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1712803851/node-line_hkfwzq.svg"
