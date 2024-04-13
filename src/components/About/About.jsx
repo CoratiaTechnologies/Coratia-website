@@ -27,6 +27,7 @@ export default function AboutUs() {
               id="e1lyC_ipKfQ"
               title="Why do you need us ?"
               poster="maxresdefault"
+              thumbnail="thumbnail.gif"
               webp
               wrapperClass="yt-lite rounded"
               style={{

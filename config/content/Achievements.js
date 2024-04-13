@@ -8,9 +8,9 @@ export const achievementcontent = [
   },
   {
     id: 2,
-    text: "Winner of Maharastra Startup Week, 2022",
+    text: "Featured on Shark Tank India Season 3, 2024",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1713046934/Deb-Dharmendra_hcerz3.png",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
@@ -36,9 +36,9 @@ export const achievementcontent = [
   },
   {
     id: 6,
-    text: "Featured on Shark Tank India Season 3, 2024",
+    text: "Winner of Maharastra Startup Week, 2022",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1712079327/IMG_2528_c4oigs.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
 ];
