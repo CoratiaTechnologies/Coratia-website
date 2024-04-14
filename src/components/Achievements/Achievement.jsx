@@ -5,7 +5,7 @@ import { achievementcontent } from "../../../config/content/Achievements";
 
 export default function Achievements() {
   return (
-    <>
+    <div className="pb-14 bg-white">
       <style>{`
       .hover-text{
         opacity: 0;
@@ -24,7 +24,7 @@ export default function Achievements() {
       
     `}</style>
 
-      <div className="bg-white flex items-center justify-center pt-6 md:pt-24">
+      <div className="flex items-center justify-center pt-6 md:pt-24">
         <Heading className="py-5 md:py-10">Achievements</Heading>
       </div>
       <div className="w-full px-5 bg-white">
@@ -58,6 +58,6 @@ export default function Achievements() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

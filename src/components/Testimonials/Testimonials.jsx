@@ -83,7 +83,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="flex items-center justify-center">
-        <Heading className="mt-28 mb-10">Testimonials</Heading>
+        <Heading className="mt-14 mb-10">Testimonials</Heading>
       </div>
 
       <div className="carouselContainer2 py-4 md:pl-10 md:pr-14">

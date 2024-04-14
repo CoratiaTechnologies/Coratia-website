@@ -8,11 +8,11 @@ const awardImage =
 
 export default function Awards() {
   return (
-    <div className="pt-32 hidden md:block">
+    <div className="pt-14 hidden md:block bg-gradient-to-br from-cyan-100 to-blue-100 pb-14">
       <Heading className="text-center mb-7">Awards & Recognition</Heading>
       <div className="flex flex-wrap gap-x-12 gap-y-20 justify-evenly">
         {awards.map((item, index) => (
-          <div key={index} className="w-[200px] h-[160px]">
+          <div key={index} className="w-[200px]">
             <Image
               height={100}
               width={100}
