@@ -10,7 +10,7 @@ export default function Awards() {
   return (
     <div className="pt-14 hidden md:block bg-gradient-to-br from-cyan-100 to-blue-100 pb-14">
       <Heading className="text-center mb-7">Awards & Recognition</Heading>
-      <div className="flex flex-wrap gap-x-12 gap-y-20 justify-evenly">
+      <div className="flex flex-wrap gap-x-12 justify-evenly">
         {awards.map((item, index) => (
           <div key={index} className="w-[200px]">
             <Image

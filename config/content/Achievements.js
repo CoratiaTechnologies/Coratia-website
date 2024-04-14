@@ -3,7 +3,7 @@ export const achievementcontent = [
     id: 1,
     text: "Felicitated by Hon'ble Union Minister Shri Dharmendra Pradhan ",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460/v1712080245/WhatsApp_Image_2024-04-02_at_11.15.00_PM_t5ucsa.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_462/v1713105989/deb-dharmendra_pobj62.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
