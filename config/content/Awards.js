@@ -1,6 +1,6 @@
 export const awards = [
   {
-    text: "Winnernof Digital Communication Innovation Square (DCIS)",
+    text: "Winner of Digital Communication Innovation Square (DCIS)",
     year: "2023",
   },
   {

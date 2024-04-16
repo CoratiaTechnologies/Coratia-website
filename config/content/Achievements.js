@@ -15,16 +15,16 @@ export const achievementcontent = [
   },
   {
     id: 3,
-    text: "Felicitated by Chief of Naval Staff Admiral R. Hari Kumar, 2023",
+    text: "Appreciated by Hon'ble Rakshya Mantri Shri Rajnath Singh Ji",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300418/achievement_4_oaxqeg.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
     id: 4,
-    text: "Appreciated by Hon'ble Rakshya Mantri Shri Rajnath Singh Ji",
+    text: "Winner of Maharastra Startup Week, 2022",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300418/achievement_4_oaxqeg.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
   {
@@ -36,9 +36,9 @@ export const achievementcontent = [
   },
   {
     id: 6,
-    text: "Winner of Maharastra Startup Week, 2022",
+    text: "Felicitated by Chief of Naval Staff Admiral R. Hari Kumar, 2023",
     picture:
-      "https://res.cloudinary.com/dgjzygzgx/image/upload/c_fill,w_792,h_460,g_auto/v1705423606/IMG-20221016-WA0027_1_bzkkgd.jpg",
+      "https://res.cloudinary.com/dgjzygzgx/image/upload/v1704300384/achievement_3_onrpob.jpg",
     desc: "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
   },
 ];
