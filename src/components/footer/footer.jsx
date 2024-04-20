@@ -59,14 +59,29 @@ export default function Footer() {
               src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1702608372/logo_q5m0jp.png"
               width={280}
             />
-
-            <Image
-              alt="Company Logo"
-              className=" mt-5 ml-5 object-fill"
-              height={45}
-              src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1705693133/make_in_india-removebg-preview_ulqcak.png"
-              width={100}
-            />
+            <div className="flex flex-wrap">
+              <Image
+                alt="Make In India"
+                className=" mt-5 ml-5 object-fill"
+                height={45}
+                src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1705693133/make_in_india-removebg-preview_ulqcak.png"
+                width={100}
+              />
+              <Image
+                alt="Startup India"
+                className=" mt-5 ml-5 object-fill"
+                height={45}
+                src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1713589723/Startup_India_gwl7m6.png"
+                width={140}
+              />
+              <Image
+                alt="Startup Odisha"
+                className=" mt-5 ml-5 object-fill"
+                height={40}
+                src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1713590270/Startup_Odisha_rgraac.png"
+                width={130}
+              />
+            </div>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
