@@ -81,10 +81,15 @@ export default function Footer() {
                 </React.Fragment>
               ))}
             </p>
-            Email:&nbsp;
-            <a href="mailto:contact@coratia.com" className="underline">
-              {mapcontent.email}
-            </a>
+            <div>
+              Email:&nbsp;
+              <a
+                href="mailto:contact@coratia.com"
+                className="underline hover:text-gray-400"
+              >
+                {mapcontent.email}
+              </a>
+            </div>
           </div>
 
           <div className="md:grid md:grid-cols-2 md:gap-8">
