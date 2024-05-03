@@ -74,13 +74,6 @@ export default function Footer() {
                 src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1713589723/Startup_India_gwl7m6.png"
                 width={140}
               />
-              <Image
-                alt="Startup Odisha"
-                className=" mt-5 ml-5 object-fill"
-                height={40}
-                src="https://res.cloudinary.com/dgjzygzgx/image/upload/v1713590270/Startup_Odisha_rgraac.png"
-                width={130}
-              />
             </div>
           </div>
 
