@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Heading } from "./Typography";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 
 const featureImage =
-  "https://res.cloudinary.com/dgjzygzgx/image/upload/v1712694201/Screenshot_12_2_neww94.png";
+  "https://res.cloudinary.com/dgjzygzgx/image/upload/v1715323801/jalasimha.jpg";
 
 const content = [
   "Integrated workspace with cameras, multibeam sonar and GPS position",
@@ -55,7 +55,7 @@ const Features = () => {
 
   return (
     <div className="hidden sm:block">
-      <div className="text-center md:pt-32 pt-16 pb-10 bg-white">
+      <div className="text-center md:pt-32 pt-16 pb-10 bg-gradient-to-t from-[#bcbdbd] to-white">
         <Heading>Product Features</Heading>
       </div>
       <div
@@ -69,9 +69,9 @@ const Features = () => {
           <Image
             src={featureImage}
             alt=""
-            height={935}
-            width={800}
-            className="object-contain"
+            height={1080}
+            width={1920}
+            className="object-cover"
           />
           <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 grid-rows-6 gap-x-8 px-10 gap-y-1 z-1">
             {content.map((item, index) => {
