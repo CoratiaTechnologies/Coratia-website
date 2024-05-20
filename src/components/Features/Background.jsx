@@ -11,11 +11,10 @@ function Background(props) {
   });
 
   useEffect(() => {
-    // Only run this effect on the client side
     const loadImages = () => {
       const loadedImages = [];
       for (let i = 1; i <= 106; i++) {
-        const img = new window.Image(); // Ensure Image is used in browser environment
+        const img = new window.Image();
         img.src = `/images/${i}.webp`;
         loadedImages.push(img);
       }
