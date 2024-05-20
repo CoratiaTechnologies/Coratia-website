@@ -8,7 +8,8 @@ import Map from "../components/map/map";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Achievements from "../components/Achievements/Achievement";
 import Awards from "../components/Awards/Awards";
-import Features from "../components/Features";
+import Features from "../components/Features/Features";
+import Background from "../components/Features/Background";
 
 export default function Home() {
   let [loading, setLoading] = useState(false);
