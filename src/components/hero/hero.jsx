@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { herocontent } from "../../../config/content/Hero";
 import HashLoader from "react-spinners/HashLoader";
 import Image from "next/image";
 import "./Hero.css";
 
-const herovideo =
-  "https://res.cloudinary.com/dq9gdlbls/video/upload/f_auto:video,q_auto/herovid_bkrsqb";
+const herovideo = "https://res.cloudinary.com/dq9gdlbls/video/upload/f_auto:video,q_auto/herovid_bkrsqb";
 
 export function HeroText() {
   return (
@@ -48,23 +47,20 @@ export default function Hero() {
   return (
     <>
       <div className="hero-section w-full max-w-full overflow-hidden">
+        {/* ~~~~~~ Background Video starts ~~~~~ */}
         <video
-          width={1080}
-          height={720}
           autoPlay
           muted
           loop
-          className="hero-image fixed object-cover w-full max-w-full h-[630px] mt-[60px] -z-20 overflow-hidden"
-        >
+          className="hero-image fixed object-cover w-full max-w-full h-screen -z-20 overflow-hidden">
           <source src={herovideo} type="video/webm" />
         </video>
+        {/* ~~~~~~ Background Video ends ~~~~~ */}
 
-        <div className="hero-child absolute w-full top-[320px] sm:top-[240px] z-0">
+        <div className="hero-child pt-[60px] absolute w-full h-full flex justify-center items-center">
           <div className="hero-wrapper relative w-[700px] mx-auto">
             <p
-              className="drop-1 hero-text mx-auto text-center p-3 
-                font-bold text-white text-6xl"
-            >
+              className="drop-1 hero-text mx-auto text-center p-3 font-bold text-white text-6xl">
               Revolutionizing Underwater Inspection using Robots
             </p>
 

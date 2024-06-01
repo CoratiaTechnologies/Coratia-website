@@ -17,6 +17,7 @@
     --background-end-rgb: 255, 255, 255;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,4 +34,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #13b2e2;
 }

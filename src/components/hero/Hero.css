@@ -1,13 +1,21 @@
 .hero-section {
   background: cover;
   z-index: 0;
-  height: 540px;
+  height: 100vh;
   width: 100%;
 }
 
 .transText {
   line-height: 11vw;
 }
+
+/* .hero-text p {
+  height: 0;
+
+  &:nth-child(1) {
+    color: #0da3df;
+  }
+} */
 
 @media only screen and (max-width: 720px) {
   .hero-text {
@@ -20,9 +28,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .hero-section {
-    height: 700px;
-  }
   .hero-text {
     font-size: 1.8rem /* 29px */;
     line-height: 2.2rem /* 34px */;
