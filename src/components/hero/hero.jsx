@@ -12,7 +12,7 @@ export function HeroText() {
     <div className="relative">
       <h1
         style={{
-          fontSize: "6.8vw",
+          fontSize: "6.801vw",
           mixBlendMode: "multiply",
         }}
         className="transText bg-black text-white md:mt-24 w-[100%] text-center font-extrabold"
