@@ -20,7 +20,7 @@ const navComponents = [
   { title: "CONTACT US", id: 5, scroll: "/#contact" },
 ];
 
-function Navbar() {
+export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [activeLink, setActiveLink] = useState("/"); // State to track the active link
@@ -221,6 +221,4 @@ function Navbar() {
       {/* ~~~~~ Nav Link bar for small screens ends ~~~~~ */}
     </>
   );
-}
-
-export default Navbar;
+};
